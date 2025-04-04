@@ -1,0 +1,11 @@
+[
+    {
+      "word": "Apple",
+      "forbidden": ["Fruit", "Red", "Juice", "Tree", "Eatable"]
+    },
+    {
+      "word": "Car",
+      "forbidden": ["Drive", "Road", "Engine", "Vehicle", "Transport"]
+    }
+  ]
+  

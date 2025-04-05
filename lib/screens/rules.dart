@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:taboo/screens/home_screen.dart';
+import 'package:vibration/vibration.dart';
 
 class RulesPage extends StatelessWidget {
   @override
@@ -62,7 +62,7 @@ class RulesPage extends StatelessWidget {
             SizedBox(height: 20),
             GestureDetector(
               onTap: () {
-                HapticFeedback.mediumImpact();
+                Vibration.vibrate(duration: 100);
                 Get.off(HomeScreen(), transition: Transition.upToDown);
               },
               child: Center(

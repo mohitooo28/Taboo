@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,6 +8,7 @@ import 'package:taboo/screens/preset_panic_home.dart';
 import 'package:taboo/screens/rules.dart';
 import 'package:taboo/widgets/game_type_cards.dart';
 import 'package:taboo/widgets/rules_card.dart';
+import 'package:vibration/vibration.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Center(
                 child: GestureDetector(
                   onTap: () {
-                    HapticFeedback.mediumImpact();
+                    Vibration.vibrate(duration: 50);
                     _controller.forward(from: 0); // Restart animation on tap
                   },
                   child: BounceIn(
@@ -120,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 16),
               GestureDetector(
                   onTap: () {
-                    HapticFeedback.mediumImpact();
+                    Vibration.vibrate(duration: 100);
                     Get.to(RulesPage(), transition: Transition.downToUp);
                   },
                   child: RulesCard()),
@@ -137,22 +137,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-              // Row(
-              //   crossAxisAlignment: CrossAxisAlignment.end,
-              //   mainAxisAlignment: MainAxisAlignment.start,
-              //   children: [
-              //     Padding(
-              //       padding: const EdgeInsets.only(left: 16, bottom: 40),
-              //       child:
-              //     ),
-              //     const Spacer(),
-              //     Align(
-              //         alignment: Alignment.centerRight,
-              //         child:
-              //             Lottie.asset("assets/lottie/mask.json", width: 200)),
-              //     const SizedBox(width: 5)
-              //   ],
-              // ),
             ],
           ),
         ),

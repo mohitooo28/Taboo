@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:taboo/controllers/game_controller.dart';
+import 'package:taboo/screens/game/get_ready_screen.dart';
 import 'package:taboo/widgets/game_settings.dart';
 import 'package:taboo/widgets/team_container.dart';
+import 'package:vibration/vibration.dart';
 
 class PresetPanicHome extends StatefulWidget {
   const PresetPanicHome({super.key});
@@ -12,13 +15,15 @@ class PresetPanicHome extends StatefulWidget {
 }
 
 class _PresetPanicHomeState extends State<PresetPanicHome> {
+  // Data it has redTeamName, blueTeamName, playTime, round, numberofPasses
+
   // Team name variables
   String redTeamName = "Red Team";
   String blueTeamName = "Blue Team";
 
   // Game settings variables
   int playTime = 60; // in seconds
-  int round = 2;
+  int rounds = 2;
   int numberOfPasses = 3;
 
   // Editing state variables
@@ -144,7 +149,7 @@ class _PresetPanicHomeState extends State<PresetPanicHome> {
                       const SizedBox(height: 30),
                       Text(
                         "PRE-SET PANIC",
-                        style: GoogleFonts.doHyeon(
+                        style: GoogleFonts.aclonica(
                           color: Colors.white,
                           fontSize: 33,
                           fontWeight: FontWeight.w500,
@@ -187,20 +192,23 @@ class _PresetPanicHomeState extends State<PresetPanicHome> {
                       // Game Settings Container
                       GameSettingsWidget(
                         playTime: playTime,
-                        round: round,
+                        round: rounds,
                         numberOfPasses: numberOfPasses,
                         getPassesDisplay: getPassesDisplay,
                         onPlayTimeChanged: (value) {
+                          Vibration.vibrate(duration: 10);
                           setState(() {
                             playTime = value.round();
                           });
                         },
                         onRoundChanged: (value) {
+                          Vibration.vibrate(duration: 10);
                           setState(() {
-                            round = value.round();
+                            rounds = value.round();
                           });
                         },
                         onPassesChanged: (value) {
+                          Vibration.vibrate(duration: 10);
                           setState(() {
                             numberOfPasses = value.round();
                           });
@@ -219,18 +227,16 @@ class _PresetPanicHomeState extends State<PresetPanicHome> {
                   bottom: 20,
                   child: GestureDetector(
                     onTap: () {
-                      HapticFeedback.heavyImpact();
+                      Vibration.vibrate(duration: 100);
                       FocusScope.of(context).unfocus();
 
-                      print(
-                          "---------------------------------------------------");
-                      print("Red Team Name: $redTeamName");
-                      print("Blue Team Name: $blueTeamName");
-                      print("Play Time: $playTime");
-                      print("Round: $round");
-                      print("Passes: $numberOfPasses");
-                      print(
-                          "---------------------------------------------------");
+                      // Initialize game controller with current settings
+                      final gameController = Get.put(GameController());
+                      gameController.initializeGame(redTeamName, blueTeamName,
+                          playTime, rounds, numberOfPasses);
+
+                      // Navigate to get ready screen
+                      Get.to(() => const GetReadyScreen());
                     },
                     child: Container(
                       height: 60,

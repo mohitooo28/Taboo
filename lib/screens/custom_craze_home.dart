@@ -1,11 +1,10 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:taboo/widgets/compact_game_settings.dart';
-import 'package:taboo/widgets/game_settings.dart';
 import 'package:taboo/widgets/team_container.dart';
+import 'package:vibration/vibration.dart';
 
 class CustomCrazeHome extends StatefulWidget {
   const CustomCrazeHome({super.key});
@@ -340,7 +339,7 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                   bottom: 20,
                   child: GestureDetector(
                     onTap: () {
-                      HapticFeedback.heavyImpact();
+                      Vibration.vibrate(duration: 100);
                       FocusScope.of(context).unfocus();
 
                       // Validate the JSON when Ready button is pressed

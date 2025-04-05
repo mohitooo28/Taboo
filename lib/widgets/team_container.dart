@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:vibration/vibration.dart';
 
 class TeamContainer extends StatelessWidget {
   final bool isEditing;
@@ -79,7 +80,10 @@ class TeamContainer extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: IconButton(
               icon: Icon(Iconsax.edit_2, color: Colors.white),
-              onPressed: onEditPressed,
+              onPressed: () {
+                Vibration.vibrate(duration: 50);
+                onEditPressed();
+              },
               padding: EdgeInsets.zero,
               constraints: const BoxConstraints(),
             ),
@@ -91,7 +95,10 @@ class TeamContainer extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: IconButton(
                 icon: const Icon(Icons.check, color: Colors.white),
-                onPressed: onEditPressed,
+                onPressed: () {
+                  Vibration.vibrate(duration: 50);
+                  onEditPressed();
+                },
               ),
             ),
         ],

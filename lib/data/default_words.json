@@ -1,0 +1,4452 @@
+[
+	{
+		"word": "Sun",
+		"forbidden": [
+			"Bright",
+			"Hot",
+			"Sky",
+			"Day",
+			"Light"
+		]
+	},
+	{
+		"word": "Moon",
+		"forbidden": [
+			"Night",
+			"Sky",
+			"Full",
+			"Crescent",
+			"Lunar"
+		]
+	},
+	{
+		"word": "Laptop",
+		"forbidden": [
+			"Computer",
+			"Keyboard",
+			"Screen",
+			"Portable",
+			"Mouse"
+		]
+	},
+	{
+		"word": "Bicycle",
+		"forbidden": [
+			"Pedal",
+			"Wheels",
+			"Ride",
+			"Handle",
+			"Chain"
+		]
+	},
+	{
+		"word": "Guitar",
+		"forbidden": [
+			"Strings",
+			"Music",
+			"Play",
+			"Instrument",
+			"Tune"
+		]
+	},
+	{
+		"word": "Rainbow",
+		"forbidden": [
+			"Colors",
+			"Sky",
+			"Arc",
+			"Rain",
+			"Sunlight"
+		]
+	},
+	{
+		"word": "Ocean",
+		"forbidden": [
+			"Water",
+			"Waves",
+			"Sea",
+			"Beach",
+			"Blue"
+		]
+	},
+	{
+		"word": "Mountain",
+		"forbidden": [
+			"Peak",
+			"Climb",
+			"Tall",
+			"Hike",
+			"Rock"
+		]
+	},
+	{
+		"word": "Clock",
+		"forbidden": [
+			"Time",
+			"Tick",
+			"Hour",
+			"Minute",
+			"Hands"
+		]
+	},
+	{
+		"word": "Bridge",
+		"forbidden": [
+			"Connect",
+			"River",
+			"Road",
+			"Structure",
+			"Cross"
+		]
+	},
+	{
+		"word": "Pencil",
+		"forbidden": [
+			"Write",
+			"Eraser",
+			"Sharp",
+			"Lead",
+			"Sketch"
+		]
+	},
+	{
+		"word": "Hospital",
+		"forbidden": [
+			"Doctor",
+			"Nurse",
+			"Patient",
+			"Medicine",
+			"Emergency"
+		]
+	},
+	{
+		"word": "Fire",
+		"forbidden": [
+			"Burn",
+			"Flame",
+			"Smoke",
+			"Hot",
+			"Heat"
+		]
+	},
+	{
+		"word": "Garden",
+		"forbidden": [
+			"Plants",
+			"Flowers",
+			"Green",
+			"Soil",
+			"Grow"
+		]
+	},
+	{
+		"word": "Mirror",
+		"forbidden": [
+			"Reflection",
+			"Glass",
+			"Look",
+			"Face",
+			"Frame"
+		]
+	},
+	{
+		"word": "Cloud",
+		"forbidden": [
+			"Sky",
+			"White",
+			"Rain",
+			"Fluffy",
+			"Storm"
+		]
+	},
+	{
+		"word": "Camera",
+		"forbidden": [
+			"Photo",
+			"Picture",
+			"Flash",
+			"Lens",
+			"Click"
+		]
+	},
+	{
+		"word": "Library",
+		"forbidden": [
+			"Books",
+			"Read",
+			"Quiet",
+			"Borrow",
+			"Shelves"
+		]
+	},
+	{
+		"word": "Elephant",
+		"forbidden": [
+			"Animal",
+			"Trunk",
+			"Gray",
+			"Big",
+			"Tusk"
+		]
+	},
+	{
+		"word": "Soccer",
+		"forbidden": [
+			"Ball",
+			"Goal",
+			"Field",
+			"Team",
+			"Foot"
+		]
+	},
+	{
+		"word": "Television",
+		"forbidden": [
+			"Watch",
+			"Screen",
+			"Show",
+			"Remote",
+			"Channel"
+		]
+	},
+	{
+		"word": "Train",
+		"forbidden": [
+			"Tracks",
+			"Rail",
+			"Station",
+			"Journey",
+			"Transport"
+		]
+	},
+	{
+		"word": "Ice",
+		"forbidden": [
+			"Cold",
+			"Frozen",
+			"Water",
+			"Slippery",
+			"Snow"
+		]
+	},
+	{
+		"word": "Chair",
+		"forbidden": [
+			"Sit",
+			"Legs",
+			"Seat",
+			"Furniture",
+			"Wood"
+		]
+	},
+	{
+		"word": "Bottle",
+		"forbidden": [
+			"Water",
+			"Cap",
+			"Plastic",
+			"Glass",
+			"Drink"
+		]
+	},
+	{
+		"word": "Window",
+		"forbidden": [
+			"Glass",
+			"View",
+			"Open",
+			"Frame",
+			"Curtains"
+		]
+	},
+	{
+		"word": "Jungle",
+		"forbidden": [
+			"Trees",
+			"Wild",
+			"Animals",
+			"Green",
+			"Dense"
+		]
+	},
+	{
+		"word": "Rocket",
+		"forbidden": [
+			"Space",
+			"Launch",
+			"Astronaut",
+			"Fuel",
+			"Moon"
+		]
+	},
+	{
+		"word": "Football",
+		"forbidden": [
+			"Sport",
+			"Goal",
+			"Kick",
+			"Field",
+			"Players"
+		]
+	},
+	{
+		"word": "School",
+		"forbidden": [
+			"Teacher",
+			"Students",
+			"Learn",
+			"Class",
+			"Education"
+		]
+	},
+	{
+		"word": "Planet",
+		"forbidden": [
+			"Earth",
+			"Mars",
+			"Orbit",
+			"Space",
+			"Moon"
+		]
+	},
+	{
+		"word": "Knife",
+		"forbidden": [
+			"Cut",
+			"Sharp",
+			"Blade",
+			"Handle",
+			"Kitchen"
+		]
+	},
+	{
+		"word": "Tree",
+		"forbidden": [
+			"Leaves",
+			"Branch",
+			"Green",
+			"Wood",
+			"Trunk"
+		]
+	},
+	{
+		"word": "Door",
+		"forbidden": [
+			"Knob",
+			"Open",
+			"Close",
+			"House",
+			"Entry"
+		]
+	},
+	{
+		"word": "Bed",
+		"forbidden": [
+			"Sleep",
+			"Pillow",
+			"Blanket",
+			"Mattress",
+			"Rest"
+		]
+	},
+	{
+		"word": "Suitcase",
+		"forbidden": [
+			"Travel",
+			"Pack",
+			"Luggage",
+			"Carry",
+			"Handle"
+		]
+	},
+	{
+		"word": "Statue",
+		"forbidden": [
+			"Sculpture",
+			"Stone",
+			"Monument",
+			"Art",
+			"Figure"
+		]
+	},
+	{
+		"word": "Ship",
+		"forbidden": [
+			"Sail",
+			"Ocean",
+			"Captain",
+			"Boat",
+			"Water"
+		]
+	},
+	{
+		"word": "Painting",
+		"forbidden": [
+			"Art",
+			"Canvas",
+			"Brush",
+			"Colors",
+			"Frame"
+		]
+	},
+	{
+		"word": "Electricity",
+		"forbidden": [
+			"Power",
+			"Current",
+			"Energy",
+			"Wire",
+			"Light"
+		]
+	},
+	{
+		"word": "Volcano",
+		"forbidden": [
+			"Lava",
+			"Eruption",
+			"Mountain",
+			"Smoke",
+			"Ash"
+		]
+	},
+	{
+		"word": "Castle",
+		"forbidden": [
+			"Fort",
+			"King",
+			"Queen",
+			"Walls",
+			"Moat"
+		]
+	},
+	{
+		"word": "Doctor",
+		"forbidden": [
+			"Hospital",
+			"Medicine",
+			"Sick",
+			"Patient",
+			"Cure"
+		]
+	},
+	{
+		"word": "Laptop",
+		"forbidden": [
+			"Work",
+			"Computer",
+			"Internet",
+			"Typing",
+			"Portable"
+		]
+	},
+	{
+		"word": "Candle",
+		"forbidden": [
+			"Wax",
+			"Flame",
+			"Light",
+			"Melt",
+			"Stick"
+		]
+	},
+	{
+		"word": "Glasses",
+		"forbidden": [
+			"Eyes",
+			"Vision",
+			"Frame",
+			"Lenses",
+			"Wear"
+		]
+	},
+	{
+		"word": "Motorcycle",
+		"forbidden": [
+			"Bike",
+			"Ride",
+			"Helmet",
+			"Wheels",
+			"Speed"
+		]
+	},
+	{
+		"word": "Telescope",
+		"forbidden": [
+			"Stars",
+			"Space",
+			"See",
+			"Lens",
+			"Observe"
+		]
+	},
+	{
+		"word": "Toothbrush",
+		"forbidden": [
+			"Teeth",
+			"Paste",
+			"Clean",
+			"Mouth",
+			"Bristles"
+		]
+	},
+	{
+		"word": "Microscope",
+		"forbidden": [
+			"Small",
+			"Zoom",
+			"Lens",
+			"Science",
+			"Lab"
+		]
+	},
+	{
+		"word": "Headphones",
+		"forbidden": [
+			"Music",
+			"Ear",
+			"Listen",
+			"Sound",
+			"Wireless"
+		]
+	},
+	{
+		"word": "Wallet",
+		"forbidden": [
+			"Money",
+			"Cards",
+			"Cash",
+			"Pocket",
+			"Leather"
+		]
+	},
+	{
+		"word": "Jacket",
+		"forbidden": [
+			"Wear",
+			"Cold",
+			"Coat",
+			"Zipper",
+			"Warm"
+		]
+	},
+	{
+		"word": "Helicopter",
+		"forbidden": [
+			"Fly",
+			"Blades",
+			"Pilot",
+			"Air",
+			"Rescue"
+		]
+	},
+	{
+		"word": "Radio",
+		"forbidden": [
+			"Music",
+			"Sound",
+			"FM",
+			"Station",
+			"Broadcast"
+		]
+	},
+	{
+		"word": "Parachute",
+		"forbidden": [
+			"Jump",
+			"Skydiving",
+			"Fall",
+			"Open",
+			"Safety"
+		]
+	},
+	{
+		"word": "Giraffe",
+		"forbidden": [
+			"Animal",
+			"Tall",
+			"Neck",
+			"Spots",
+			"Zoo"
+		]
+	},
+	{
+		"word": "Piano",
+		"forbidden": [
+			"Music",
+			"Keys",
+			"Play",
+			"Instrument",
+			"Black"
+		]
+	},
+	{
+		"word": "Ambulance",
+		"forbidden": [
+			"Emergency",
+			"Siren",
+			"Hospital",
+			"Doctor",
+			"Paramedic"
+		]
+	},
+	{
+		"word": "Elevator",
+		"forbidden": [
+			"Lift",
+			"Up",
+			"Down",
+			"Building",
+			"Floor"
+		]
+	},
+	{
+		"word": "Compass",
+		"forbidden": [
+			"Direction",
+			"North",
+			"South",
+			"East",
+			"West"
+		]
+	},
+	{
+		"word": "Microwave",
+		"forbidden": [
+			"Heat",
+			"Food",
+			"Cook",
+			"Oven",
+			"Timer"
+		]
+	},
+	{
+		"word": "Hammer",
+		"forbidden": [
+			"Nail",
+			"Tool",
+			"Wood",
+			"Hit",
+			"Carpenter"
+		]
+	},
+	{
+		"word": "Scissors",
+		"forbidden": [
+			"Cut",
+			"Sharp",
+			"Paper",
+			"Blade",
+			"Snip"
+		]
+	},
+	{
+		"word": "Shampoo",
+		"forbidden": [
+			"Hair",
+			"Wash",
+			"Clean",
+			"Foam",
+			"Bubbles"
+		]
+	},
+	{
+		"word": "Mosquito",
+		"forbidden": [
+			"Insect",
+			"Bite",
+			"Blood",
+			"Itch",
+			"Malaria"
+		]
+	},
+	{
+		"word": "Cactus",
+		"forbidden": [
+			"Plant",
+			"Thorn",
+			"Desert",
+			"Green",
+			"Water"
+		]
+	},
+	{
+		"word": "Puzzle",
+		"forbidden": [
+			"Solve",
+			"Pieces",
+			"Game",
+			"Brain",
+			"Jigsaw"
+		]
+	},
+	{
+		"word": "Trophy",
+		"forbidden": [
+			"Win",
+			"Prize",
+			"Award",
+			"Gold",
+			"Victory"
+		]
+	},
+	{
+		"word": "Lighthouse",
+		"forbidden": [
+			"Sea",
+			"Light",
+			"Ship",
+			"Guide",
+			"Tower"
+		]
+	},
+	{
+		"word": "Spoon",
+		"forbidden": [
+			"Eat",
+			"Fork",
+			"Bowl",
+			"Soup",
+			"Metal"
+		]
+	},
+	{
+		"word": "Triangle",
+		"forbidden": [
+			"Three",
+			"Shape",
+			"Sides",
+			"Angles",
+			"Geometry"
+		]
+	},
+	{
+		"word": "Backpack",
+		"forbidden": [
+			"Carry",
+			"Bag",
+			"Strap",
+			"School",
+			"Travel"
+		]
+	},
+	{
+		"word": "Lemon",
+		"forbidden": [
+			"Yellow",
+			"Sour",
+			"Fruit",
+			"Juice",
+			"Citrus"
+		]
+	},
+	{
+		"word": "Penguin",
+		"forbidden": [
+			"Bird",
+			"Cold",
+			"Ice",
+			"Black",
+			"Waddle"
+		]
+	},
+	{
+		"word": "Octopus",
+		"forbidden": [
+			"Sea",
+			"Arms",
+			"Ink",
+			"Tentacles",
+			"Animal"
+		]
+	},
+	{
+		"word": "Sunglasses",
+		"forbidden": [
+			"Sun",
+			"Eyes",
+			"Shades",
+			"Dark",
+			"Wear"
+		]
+	},
+	{
+		"word": "Snake",
+		"forbidden": [
+			"Reptile",
+			"Venom",
+			"Slither",
+			"Hiss",
+			"Fangs"
+		]
+	},
+	{
+		"word": "Paper",
+		"forbidden": [
+			"Write",
+			"Sheet",
+			"Notebook",
+			"White",
+			"Thin"
+		]
+	},
+	{
+		"word": "Diamond",
+		"forbidden": [
+			"Jewelry",
+			"Ring",
+			"Shiny",
+			"Expensive",
+			"Stone"
+		]
+	},
+	{
+		"word": "Candle",
+		"forbidden": [
+			"Wax",
+			"Flame",
+			"Light",
+			"Melt",
+			"Stick"
+		]
+	},
+	{
+		"word": "Broom",
+		"forbidden": [
+			"Sweep",
+			"Clean",
+			"Handle",
+			"Dust",
+			"Bristles"
+		]
+	},
+	{
+		"word": "Eagle",
+		"forbidden": [
+			"Bird",
+			"Fly",
+			"Wings",
+			"Sky",
+			"Beak"
+		]
+	},
+	{
+		"word": "Keyboard",
+		"forbidden": [
+			"Typing",
+			"Keys",
+			"Computer",
+			"Letters",
+			"Enter"
+		]
+	},
+	{
+		"word": "Turtle",
+		"forbidden": [
+			"Shell",
+			"Slow",
+			"Reptile",
+			"Swim",
+			"Green"
+		]
+	},
+	{
+		"word": "Cabbage",
+		"forbidden": [
+			"Vegetable",
+			"Leaf",
+			"Green",
+			"Round",
+			"Cook"
+		]
+	},
+	{
+		"word": "Suit",
+		"forbidden": [
+			"Tie",
+			"Formal",
+			"Wear",
+			"Clothes",
+			"Office"
+		]
+	},
+	{
+		"word": "Popcorn",
+		"forbidden": [
+			"Movie",
+			"Corn",
+			"Snack",
+			"Butter",
+			"Crunchy"
+		]
+	},
+	{
+		"word": "Tissue",
+		"forbidden": [
+			"Paper",
+			"Soft",
+			"Blow",
+			"Nose",
+			"Box"
+		]
+	},
+	{
+		"word": "Cloud",
+		"forbidden": [
+			"White",
+			"Fluffy",
+			"Sky",
+			"Rain",
+			"Storm"
+		]
+	},
+	{
+		"word": "Zebra",
+		"forbidden": [
+			"Stripes",
+			"Black",
+			"White",
+			"Animal",
+			"Horse"
+		]
+	},
+	{
+		"word": "Coconut",
+		"forbidden": [
+			"Tree",
+			"Milk",
+			"Brown",
+			"Hard",
+			"Shell"
+		]
+	},
+	{
+		"word": "Banana",
+		"forbidden": [
+			"Fruit",
+			"Yellow",
+			"Peel",
+			"Monkey",
+			"Bunch"
+		]
+	},
+	{
+		"word": "Fountain",
+		"forbidden": [
+			"Water",
+			"Spray",
+			"Pool",
+			"Park",
+			"Decor"
+		]
+	},
+	{
+		"word": "Tornado",
+		"forbidden": [
+			"Wind",
+			"Storm",
+			"Spiral",
+			"Disaster",
+			"Twister"
+		]
+	},
+	{
+		"word": "Violin",
+		"forbidden": [
+			"Strings",
+			"Music",
+			"Instrument",
+			"Bow",
+			"Play"
+		]
+	},
+	{
+		"word": "Submarine",
+		"forbidden": [
+			"Water",
+			"Under",
+			"Navy",
+			"Ocean",
+			"Dive"
+		]
+	},
+	{
+		"word": "Sculpture",
+		"forbidden": [
+			"Art",
+			"Carve",
+			"Stone",
+			"Statue",
+			"Shape"
+		]
+	},
+	{
+		"word": "Mosque",
+		"forbidden": [
+			"Prayer",
+			"Muslim",
+			"Islam",
+			"Worship",
+			"Minaret"
+		]
+	},
+	{
+		"word": "Pyramid",
+		"forbidden": [
+			"Egypt",
+			"Triangle",
+			"Ancient",
+			"Tomb",
+			"Pharaoh"
+		]
+	},
+	{
+		"word": "Harbor",
+		"forbidden": [
+			"Ships",
+			"Water",
+			"Port",
+			"Dock",
+			"Boats"
+		]
+	},
+	{
+		"word": "Ladder",
+		"forbidden": [
+			"Climb",
+			"Steps",
+			"Up",
+			"Rungs",
+			"Height"
+		]
+	},
+	{
+		"word": "Skateboard",
+		"forbidden": [
+			"Wheels",
+			"Ride",
+			"Tricks",
+			"Ramp",
+			"Park"
+		]
+	},
+	{
+		"word": "Cheese",
+		"forbidden": [
+			"Dairy",
+			"Milk",
+			"Slice",
+			"Melt",
+			"Pizza"
+		]
+	},
+	{
+		"word": "Chocolate",
+		"forbidden": [
+			"Sweet",
+			"Brown",
+			"Cocoa",
+			"Candy",
+			"Dessert"
+		]
+	},
+	{
+		"word": "Robot",
+		"forbidden": [
+			"Machine",
+			"AI",
+			"Metal",
+			"Technology",
+			"Artificial"
+		]
+	},
+	{
+		"word": "Teddy Bear",
+		"forbidden": [
+			"Stuffed",
+			"Toy",
+			"Soft",
+			"Cuddle",
+			"Gift"
+		]
+	},
+	{
+		"word": "Chameleon",
+		"forbidden": [
+			"Lizard",
+			"Change",
+			"Color",
+			"Reptile",
+			"Blend"
+		]
+	},
+	{
+		"word": "Starfish",
+		"forbidden": [
+			"Ocean",
+			"Five",
+			"Arms",
+			"Sea",
+			"Animal"
+		]
+	},
+	{
+		"word": "Mermaid",
+		"forbidden": [
+			"Sea",
+			"Tail",
+			"Myth",
+			"Water",
+			"Fish"
+		]
+	},
+	{
+		"word": "Alligator",
+		"forbidden": [
+			"Reptile",
+			"Teeth",
+			"Swamp",
+			"Crocodile",
+			"Bite"
+		]
+	},
+	{
+		"word": "Compass",
+		"forbidden": [
+			"Direction",
+			"Navigate",
+			"North",
+			"Map",
+			"South"
+		]
+	},
+	{
+		"word": "Helmet",
+		"forbidden": [
+			"Protect",
+			"Head",
+			"Bike",
+			"Safety",
+			"Gear"
+		]
+	},
+	{
+		"word": "Anchor",
+		"forbidden": [
+			"Boat",
+			"Ship",
+			"Heavy",
+			"Metal",
+			"Drop"
+		]
+	},
+	{
+		"word": "Pretzel",
+		"forbidden": [
+			"Snack",
+			"Knot",
+			"Salt",
+			"Crunchy",
+			"Bread"
+		]
+	},
+	{
+		"word": "Sushi",
+		"forbidden": [
+			"Japan",
+			"Fish",
+			"Rice",
+			"Roll",
+			"Wasabi"
+		]
+	},
+	{
+		"word": "Crown",
+		"forbidden": [
+			"King",
+			"Queen",
+			"Gold",
+			"Head",
+			"Royal"
+		]
+	},
+	{
+		"word": "Bowling",
+		"forbidden": [
+			"Pins",
+			"Ball",
+			"Strike",
+			"Lane",
+			"Game"
+		]
+	},
+	{
+		"word": "Postcard",
+		"forbidden": [
+			"Mail",
+			"Picture",
+			"Travel",
+			"Stamp",
+			"Write"
+		]
+	},
+	{
+		"word": "Chopsticks",
+		"forbidden": [
+			"Eat",
+			"Wood",
+			"Asian",
+			"Food",
+			"Hold"
+		]
+	},
+	{
+		"word": "Drum",
+		"forbidden": [
+			"Music",
+			"Stick",
+			"Beat",
+			"Play",
+			"Sound"
+		]
+	},
+	{
+		"word": "Eraser",
+		"forbidden": [
+			"Pencil",
+			"Mistake",
+			"Rub",
+			"Write",
+			"Remove"
+		]
+	},
+	{
+		"word": "Yoga",
+		"forbidden": [
+			"Exercise",
+			"Stretch",
+			"Meditation",
+			"Pose",
+			"Relax"
+		]
+	},
+	{
+		"word": "Igloo",
+		"forbidden": [
+			"Snow",
+			"House",
+			"Cold",
+			"Eskimo",
+			"Ice"
+		]
+	},
+	{
+		"word": "Grill",
+		"forbidden": [
+			"BBQ",
+			"Fire",
+			"Cook",
+			"Meat",
+			"Smoke"
+		]
+	},
+	{
+		"word": "Parrot",
+		"forbidden": [
+			"Bird",
+			"Talk",
+			"Colorful",
+			"Wings",
+			"Feathers"
+		]
+	},
+	{
+		"word": "Sailboat",
+		"forbidden": [
+			"Water",
+			"Wind",
+			"Ocean",
+			"Sail",
+			"Boat"
+		]
+	},
+	{
+		"word": "Pickle",
+		"forbidden": [
+			"Cucumber",
+			"Sour",
+			"Vinegar",
+			"Jar",
+			"Green"
+		]
+	},
+	{
+		"word": "Marathon",
+		"forbidden": [
+			"Run",
+			"Long",
+			"Race",
+			"Miles",
+			"Finish"
+		]
+	},
+	{
+		"word": "Lantern",
+		"forbidden": [
+			"Light",
+			"Candle",
+			"Glow",
+			"Night",
+			"Carry"
+		]
+	},
+	{
+		"word": "Whistle",
+		"forbidden": [
+			"Blow",
+			"Sound",
+			"Lips",
+			"Air",
+			"Noise"
+		]
+	},
+	{
+		"word": "Puzzle",
+		"forbidden": [
+			"Solve",
+			"Pieces",
+			"Brain",
+			"Challenge",
+			"Game"
+		]
+	},
+	{
+		"word": "Flamingo",
+		"forbidden": [
+			"Pink",
+			"Bird",
+			"Legs",
+			"Stand",
+			"Lake"
+		]
+	},
+	{
+		"word": "Acrobat",
+		"forbidden": [
+			"Gymnast",
+			"Balance",
+			"Flip",
+			"Circus",
+			"Perform"
+		]
+	},
+	{
+		"word": "Bakery",
+		"forbidden": [
+			"Bread",
+			"Cake",
+			"Pastry",
+			"Oven",
+			"Sweets"
+		]
+	},
+	{
+		"word": "Carousel",
+		"forbidden": [
+			"Horse",
+			"Ride",
+			"Music",
+			"Fair",
+			"Spin"
+		]
+	},
+	{
+		"word": "Orgasm",
+		"forbidden": [
+			"Climax",
+			"Pleasure",
+			"Sex",
+			"Intense",
+			"Satisfaction"
+		]
+	},
+	{
+		"word": "Foreplay",
+		"forbidden": [
+			"Touch",
+			"Intimacy",
+			"Kiss",
+			"Sex",
+			"Romance"
+		]
+	},
+	{
+		"word": "Condom",
+		"forbidden": [
+			"Safe",
+			"Sex",
+			"Protection",
+			"Rubber",
+			"Prevent"
+		]
+	},
+	{
+		"word": "Stripper",
+		"forbidden": [
+			"Dance",
+			"Club",
+			"Pole",
+			"Naked",
+			"Money"
+		]
+	},
+	{
+		"word": "Kinky",
+		"forbidden": [
+			"Fetish",
+			"Sex",
+			"Wild",
+			"BDSM",
+			"Fantasy"
+		]
+	},
+	{
+		"word": "Aphrodisiac",
+		"forbidden": [
+			"Desire",
+			"Libido",
+			"Excite",
+			"Food",
+			"Stimulate"
+		]
+	},
+	{
+		"word": "Lingerie",
+		"forbidden": [
+			"Bra",
+			"Panties",
+			"Sexy",
+			"Lace",
+			"Underwear"
+		]
+	},
+	{
+		"word": "Erection",
+		"forbidden": [
+			"Hard",
+			"Penis",
+			"Excited",
+			"Blood",
+			"Stiff"
+		]
+	},
+	{
+		"word": "Massage",
+		"forbidden": [
+			"Relax",
+			"Oil",
+			"Touch",
+			"Body",
+			"Therapy"
+		]
+	},
+	{
+		"word": "Threesome",
+		"forbidden": [
+			"Three",
+			"Sex",
+			"Group",
+			"Fantasy",
+			"Wild"
+		]
+	},
+	{
+		"word": "Roleplay",
+		"forbidden": [
+			"Act",
+			"Fantasy",
+			"Costume",
+			"Scenario",
+			"Sex"
+		]
+	},
+	{
+		"word": "Spanking",
+		"forbidden": [
+			"Hand",
+			"Punish",
+			"BDSM",
+			"Butt",
+			"Kink"
+		]
+	},
+	{
+		"word": "Moan",
+		"forbidden": [
+			"Sound",
+			"Pleasure",
+			"Sex",
+			"Loud",
+			"Orgasm"
+		]
+	},
+	{
+		"word": "Handcuffs",
+		"forbidden": [
+			"Restraint",
+			"Metal",
+			"Police",
+			"BDSM",
+			"Bondage"
+		]
+	},
+	{
+		"word": "Blindfold",
+		"forbidden": [
+			"Eyes",
+			"Cover",
+			"Surprise",
+			"BDSM",
+			"Dark"
+		]
+	},
+	{
+		"word": "Lap Dance",
+		"forbidden": [
+			"Stripper",
+			"Club",
+			"Sexy",
+			"Sit",
+			"Dance"
+		]
+	},
+	{
+		"word": "Seduction",
+		"forbidden": [
+			"Tempt",
+			"Flirt",
+			"Lure",
+			"Sexy",
+			"Charm"
+		]
+	},
+	{
+		"word": "Tantric",
+		"forbidden": [
+			"Yoga",
+			"Sex",
+			"Spiritual",
+			"Intimate",
+			"Energy"
+		]
+	},
+	{
+		"word": "Fantasy",
+		"forbidden": [
+			"Dream",
+			"Wild",
+			"Sexual",
+			"Imagine",
+			"Desire"
+		]
+	},
+	{
+		"word": "Nipple",
+		"forbidden": [
+			"Breast",
+			"Touch",
+			"Sensitive",
+			"Lick",
+			"Suck"
+		]
+	},
+	{
+		"word": "Bondage",
+		"forbidden": [
+			"Rope",
+			"Tie",
+			"Control",
+			"Restraint",
+			"Kink"
+		]
+	},
+	{
+		"word": "Fetish",
+		"forbidden": [
+			"Obsession",
+			"Kink",
+			"Unusual",
+			"Desire",
+			"Sexual"
+		]
+	},
+	{
+		"word": "Strip Club",
+		"forbidden": [
+			"Dancer",
+			"Naked",
+			"Money",
+			"Lap Dance",
+			"Stage"
+		]
+	},
+	{
+		"word": "Naughty",
+		"forbidden": [
+			"Mischief",
+			"Sexy",
+			"Flirt",
+			"Dirty",
+			"Spank"
+		]
+	},
+	{
+		"word": "Quickie",
+		"forbidden": [
+			"Fast",
+			"Sex",
+			"Brief",
+			"Excitement",
+			"Rush"
+		]
+	},
+	{
+		"word": "Erotic",
+		"forbidden": [
+			"Sensual",
+			"Sexy",
+			"Passion",
+			"Hot",
+			"Steamy"
+		]
+	},
+	{
+		"word": "Intimate",
+		"forbidden": [
+			"Close",
+			"Romantic",
+			"Sexual",
+			"Personal",
+			"Love"
+		]
+	},
+	{
+		"word": "Dominate",
+		"forbidden": [
+			"Control",
+			"Power",
+			"BDSM",
+			"Top",
+			"Obey"
+		]
+	},
+	{
+		"word": "Submission",
+		"forbidden": [
+			"Obey",
+			"Control",
+			"Power",
+			"BDSM",
+			"Restraint"
+		]
+	},
+	{
+		"word": "Lust",
+		"forbidden": [
+			"Desire",
+			"Want",
+			"Passion",
+			"Sex",
+			"Craving"
+		]
+	},
+	{
+		"word": "Dirty Talk",
+		"forbidden": [
+			"Words",
+			"Naughty",
+			"Sex",
+			"Whisper",
+			"Excite"
+		]
+	},
+	{
+		"word": "Voyeur",
+		"forbidden": [
+			"Watch",
+			"Secret",
+			"Spy",
+			"Peep",
+			"Hidden"
+		]
+	},
+	{
+		"word": "Flirt",
+		"forbidden": [
+			"Tease",
+			"Wink",
+			"Talk",
+			"Interest",
+			"Attraction"
+		]
+	},
+	{
+		"word": "Breathless",
+		"forbidden": [
+			"Excitement",
+			"Gasp",
+			"Tension",
+			"Intense",
+			"Desire"
+		]
+	},
+	{
+		"word": "Heat",
+		"forbidden": [
+			"Passion",
+			"Fire",
+			"Burn",
+			"Desire",
+			"Sweat"
+		]
+	},
+	{
+		"word": "Tickle",
+		"forbidden": [
+			"Touch",
+			"Laugh",
+			"Fingers",
+			"Tease",
+			"Soft"
+		]
+	},
+	{
+		"word": "Bite",
+		"forbidden": [
+			"Teeth",
+			"Nibble",
+			"Lip",
+			"Kiss",
+			"Soft"
+		]
+	},
+	{
+		"word": "Caress",
+		"forbidden": [
+			"Touch",
+			"Soft",
+			"Hand",
+			"Stroke",
+			"Feel"
+		]
+	},
+	{
+		"word": "Massage Oil",
+		"forbidden": [
+			"Body",
+			"Rub",
+			"Relax",
+			"Smooth",
+			"Warm"
+		]
+	},
+	{
+		"word": "Candlelight",
+		"forbidden": [
+			"Glow",
+			"Dinner",
+			"Romance",
+			"Flicker",
+			"Mood"
+		]
+	},
+	{
+		"word": "Undress",
+		"forbidden": [
+			"Clothes",
+			"Take Off",
+			"Naked",
+			"Slow",
+			"Reveal"
+		]
+	},
+	{
+		"word": "Tease",
+		"forbidden": [
+			"Flirt",
+			"Playful",
+			"Excite",
+			"Edge",
+			"Provocative"
+		]
+	},
+	{
+		"word": "Whip",
+		"forbidden": [
+			"Spank",
+			"Leather",
+			"Hit",
+			"Punish",
+			"BDSM"
+		]
+	},
+	{
+		"word": "Moist",
+		"forbidden": [
+			"Wet",
+			"Soft",
+			"Lips",
+			"Tongue",
+			"Damp"
+		]
+	},
+	{
+		"word": "Lick",
+		"forbidden": [
+			"Tongue",
+			"Taste",
+			"Wet",
+			"Suck",
+			"Mouth"
+		]
+	},
+	{
+		"word": "Sensual",
+		"forbidden": [
+			"Touch",
+			"Soft",
+			"Erotic",
+			"Pleasure",
+			"Desire"
+		]
+	},
+	{
+		"word": "Viagra",
+		"forbidden": [
+			"Pill",
+			"Erectile",
+			"Blue",
+			"Performance",
+			"Enhance"
+		]
+	},
+	{
+		"word": "Penis",
+		"forbidden": [
+			"Male",
+			"Cock",
+			"Erection",
+			"Genital",
+			"Organ"
+		]
+	},
+	{
+		"word": "Boobs",
+		"forbidden": [
+			"Breasts",
+			"Chest",
+			"Big",
+			"Cleavage",
+			"Bounce"
+		]
+	},
+	{
+		"word": "Ejaculation",
+		"forbidden": [
+			"Sperm",
+			"Orgasm",
+			"Release",
+			"Climax",
+			"Shoot"
+		]
+	},
+	{
+		"word": "Porn",
+		"forbidden": [
+			"Video",
+			"Sex",
+			"Adult",
+			"Watch",
+			"Naked"
+		]
+	},
+	{
+		"word": "Masturbation",
+		"forbidden": [
+			"Self",
+			"Pleasure",
+			"Hand",
+			"Solo",
+			"Touch"
+		]
+	},
+	{
+		"word": "G-Spot",
+		"forbidden": [
+			"Pleasure",
+			"Inside",
+			"Orgasm",
+			"Female",
+			"Sensitive"
+		]
+	},
+	{
+		"word": "Dildo",
+		"forbidden": [
+			"Toy",
+			"Vibrator",
+			"Insert",
+			"Pleasure",
+			"Sexual"
+		]
+	},
+	{
+		"word": "Butt Plug",
+		"forbidden": [
+			"Anal",
+			"Toy",
+			"Insert",
+			"Pleasure",
+			"Round"
+		]
+	},
+	{
+		"word": "Nipples",
+		"forbidden": [
+			"Boobs",
+			"Sensitive",
+			"Lick",
+			"Hard",
+			"Suck"
+		]
+	},
+	{
+		"word": "Deepthroat",
+		"forbidden": [
+			"Oral",
+			"Throat",
+			"Gag",
+			"Suck",
+			"Skill"
+		]
+	},
+	{
+		"word": "Lube",
+		"forbidden": [
+			"Wet",
+			"Slippery",
+			"Apply",
+			"Smooth",
+			"Bottle"
+		]
+	},
+	{
+		"word": "69",
+		"forbidden": [
+			"Oral",
+			"Position",
+			"Sex",
+			"Both",
+			"Numbers"
+		]
+	},
+	{
+		"word": "BDSM",
+		"forbidden": [
+			"Bondage",
+			"Dominate",
+			"Submission",
+			"Kink",
+			"Whip"
+		]
+	},
+	{
+		"word": "Spanking",
+		"forbidden": [
+			"Hand",
+			"Butt",
+			"Punish",
+			"Kink",
+			"Hit"
+		]
+	},
+	{
+		"word": "Anal",
+		"forbidden": [
+			"Back",
+			"Entry",
+			"Sex",
+			"Tight",
+			"Pleasure"
+		]
+	},
+	{
+		"word": "Cock Ring",
+		"forbidden": [
+			"Penis",
+			"Tight",
+			"Pleasure",
+			"Enhance",
+			"Rubber"
+		]
+	},
+	{
+		"word": "Naughty",
+		"forbidden": [
+			"Flirt",
+			"Dirty",
+			"Kinky",
+			"Tease",
+			"Wild"
+		]
+	},
+	{
+		"word": "Orgasmic",
+		"forbidden": [
+			"Climax",
+			"Pleasure",
+			"Scream",
+			"Moan",
+			"Satisfaction"
+		]
+	},
+	{
+		"word": "Seduce",
+		"forbidden": [
+			"Lure",
+			"Attract",
+			"Tease",
+			"Romance",
+			"Excite"
+		]
+	},
+	{
+		"word": "Thrust",
+		"forbidden": [
+			"Push",
+			"Hard",
+			"Rhythm",
+			"Sex",
+			"Move"
+		]
+	},
+	{
+		"word": "Cum",
+		"forbidden": [
+			"Ejaculate",
+			"Sperm",
+			"Shoot",
+			"White",
+			"Climax"
+		]
+	},
+	{
+		"word": "Panties",
+		"forbidden": [
+			"Underwear",
+			"Lace",
+			"Thong",
+			"Sexy",
+			"Wear"
+		]
+	},
+	{
+		"word": "Wet",
+		"forbidden": [
+			"Moist",
+			"Lube",
+			"Excited",
+			"Damp",
+			"Slip"
+		]
+	},
+	{
+		"word": "Twerk",
+		"forbidden": [
+			"Booty",
+			"Dance",
+			"Shake",
+			"Hip",
+			"Club"
+		]
+	},
+	{
+		"word": "Erotica",
+		"forbidden": [
+			"Sexual",
+			"Stories",
+			"Steamy",
+			"Book",
+			"Fantasy"
+		]
+	},
+	{
+		"word": "Sugar Daddy",
+		"forbidden": [
+			"Rich",
+			"Young",
+			"Money",
+			"Spoil",
+			"Older"
+		]
+	},
+	{
+		"word": "MILF",
+		"forbidden": [
+			"Mom",
+			"Older",
+			"Sexy",
+			"Cougar",
+			"Hot"
+		]
+	},
+	{
+		"word": "Cougar",
+		"forbidden": [
+			"Older",
+			"Younger",
+			"Woman",
+			"Sex",
+			"Attraction"
+		]
+	},
+	{
+		"word": "Gag",
+		"forbidden": [
+			"Mouth",
+			"Choke",
+			"Deepthroat",
+			"BDSM",
+			"Restraint"
+		]
+	},
+	{
+		"word": "Handjob",
+		"forbidden": [
+			"Stroke",
+			"Grip",
+			"Rub",
+			"Penis",
+			"Touch"
+		]
+	},
+	{
+		"word": "Sexting",
+		"forbidden": [
+			"Text",
+			"Naughty",
+			"Flirt",
+			"Phone",
+			"Messages"
+		]
+	},
+	{
+		"word": "Moist",
+		"forbidden": [
+			"Wet",
+			"Lips",
+			"Damp",
+			"Slick",
+			"Soft"
+		]
+	},
+	{
+		"word": "Lick",
+		"forbidden": [
+			"Tongue",
+			"Wet",
+			"Taste",
+			"Suck",
+			"Mouth"
+		]
+	},
+	{
+		"word": "Glory Hole",
+		"forbidden": [
+			"Anonymous",
+			"Sex",
+			"Wall",
+			"Oral",
+			"Secret"
+		]
+	},
+	{
+		"word": "Suck",
+		"forbidden": [
+			"Mouth",
+			"Lips",
+			"Lick",
+			"Pleasure",
+			"Oral"
+		]
+	},
+	{
+		"word": "Strip",
+		"forbidden": [
+			"Clothes",
+			"Naked",
+			"Dance",
+			"Remove",
+			"Show"
+		]
+	},
+	{
+		"word": "Dirty",
+		"forbidden": [
+			"Naughty",
+			"Messy",
+			"Talk",
+			"Sex",
+			"Filthy"
+		]
+	},
+	{
+		"word": "Bang",
+		"forbidden": [
+			"Sex",
+			"Hard",
+			"Hit",
+			"Sound",
+			"Fast"
+		]
+	},
+	{
+		"word": "Hickey",
+		"forbidden": [
+			"Love",
+			"Mark",
+			"Neck",
+			"Kiss",
+			"Suck"
+		]
+	},
+	{
+		"word": "Slap",
+		"forbidden": [
+			"Hand",
+			"Hit",
+			"Hard",
+			"Punish",
+			"Skin"
+		]
+	},
+	{
+		"word": "Grope",
+		"forbidden": [
+			"Touch",
+			"Grab",
+			"Feel",
+			"Body",
+			"Inappropriate"
+		]
+	},
+	{
+		"word": "Skirt",
+		"forbidden": [
+			"Short",
+			"Legs",
+			"Flirty",
+			"Dress",
+			"Wear"
+		]
+	},
+	{
+		"word": "Pole Dance",
+		"forbidden": [
+			"Strip",
+			"Club",
+			"Sexy",
+			"Spin",
+			"Stage"
+		]
+	},
+	{
+		"word": "Ride",
+		"forbidden": [
+			"Horse",
+			"Position",
+			"Top",
+			"Bounce",
+			"Movement"
+		]
+	},
+	{
+		"word": "Tongue",
+		"forbidden": [
+			"Mouth",
+			"Lick",
+			"Wet",
+			"Kiss",
+			"Oral"
+		]
+	},
+	{
+		"word": "Satin",
+		"forbidden": [
+			"Soft",
+			"Smooth",
+			"Lingerie",
+			"Fabric",
+			"Sexy"
+		]
+	},
+	{
+		"word": "Bollywood",
+		"forbidden": [
+			"Movies",
+			"Hindi",
+			"Actor",
+			"Industry",
+			"Mumbai"
+		]
+	},
+	{
+		"word": "Masala",
+		"forbidden": [
+			"Spices",
+			"Indian",
+			"Cooking",
+			"Flavor",
+			"Curry"
+		]
+	},
+	{
+		"word": "Cricket",
+		"forbidden": [
+			"Bat",
+			"Ball",
+			"India",
+			"Sport",
+			"Match"
+		]
+	},
+	{
+		"word": "Chai",
+		"forbidden": [
+			"Tea",
+			"Milk",
+			"Masala",
+			"Cup",
+			"Hot"
+		]
+	},
+	{
+		"word": "Saree",
+		"forbidden": [
+			"Indian",
+			"Wear",
+			"Cloth",
+			"Drape",
+			"Traditional"
+		]
+	},
+	{
+		"word": "Biryani",
+		"forbidden": [
+			"Rice",
+			"Spicy",
+			"Chicken",
+			"Hyderabad",
+			"Dum"
+		]
+	},
+	{
+		"word": "Pani Puri",
+		"forbidden": [
+			"Street",
+			"Water",
+			"Crispy",
+			"Spicy",
+			"Snack"
+		]
+	},
+	{
+		"word": "Lassi",
+		"forbidden": [
+			"Drink",
+			"Yogurt",
+			"Sweet",
+			"Punjab",
+			"Cool"
+		]
+	},
+	{
+		"word": "Diwali",
+		"forbidden": [
+			"Festival",
+			"Lights",
+			"Fireworks",
+			"Lakshmi",
+			"Hindu"
+		]
+	},
+	{
+		"word": "Holi",
+		"forbidden": [
+			"Colors",
+			"Festival",
+			"Water",
+			"Gulaal",
+			"March"
+		]
+	},
+	{
+		"word": "Rajma",
+		"forbidden": [
+			"Kidney Beans",
+			"Curry",
+			"Punjabi",
+			"Rice",
+			"Lunch"
+		]
+	},
+	{
+		"word": "Namaste",
+		"forbidden": [
+			"Greeting",
+			"Hello",
+			"Respect",
+			"Hands",
+			"Indian"
+		]
+	},
+	{
+		"word": "Bol Bachchan",
+		"forbidden": [
+			"Talk",
+			"Exaggerate",
+			"Lies",
+			"Drama",
+			"Comedy"
+		]
+	},
+	{
+		"word": "Jugaad",
+		"forbidden": [
+			"Hack",
+			"Solution",
+			"Indian",
+			"Creative",
+			"Fix"
+		]
+	},
+	{
+		"word": "Desi",
+		"forbidden": [
+			"Indian",
+			"Local",
+			"Culture",
+			"Tradition",
+			"Roots"
+		]
+	},
+	{
+		"word": "Momos",
+		"forbidden": [
+			"Dumplings",
+			"Steamed",
+			"Tibetan",
+			"Spicy",
+			"Chutney"
+		]
+	},
+	{
+		"word": "Dhol",
+		"forbidden": [
+			"Drum",
+			"Punjabi",
+			"Loud",
+			"Dance",
+			"Music"
+		]
+	},
+	{
+		"word": "Auto Rickshaw",
+		"forbidden": [
+			"Three-Wheeler",
+			"Driver",
+			"Transport",
+			"Meter",
+			"Ride"
+		]
+	},
+	{
+		"word": "Idli",
+		"forbidden": [
+			"South",
+			"Steamed",
+			"Rice",
+			"Sambar",
+			"Breakfast"
+		]
+	},
+	{
+		"word": "Chapati",
+		"forbidden": [
+			"Bread",
+			"Wheat",
+			"Roti",
+			"Flat",
+			"Indian"
+		]
+	},
+	{
+		"word": "Kurta",
+		"forbidden": [
+			"Clothing",
+			"Men",
+			"Traditional",
+			"Wear",
+			"Loose"
+		]
+	},
+	{
+		"word": "Garam Masala",
+		"forbidden": [
+			"Spices",
+			"Indian",
+			"Cooking",
+			"Powder",
+			"Flavor"
+		]
+	},
+	{
+		"word": "Kachori",
+		"forbidden": [
+			"Snack",
+			"Fried",
+			"Stuffed",
+			"Rajasthan",
+			"Street"
+		]
+	},
+	{
+		"word": "Dal Makhani",
+		"forbidden": [
+			"Lentils",
+			"Punjabi",
+			"Butter",
+			"Curry",
+			"Creamy"
+		]
+	},
+	{
+		"word": "Madhuri Dixit",
+		"forbidden": [
+			"Actress",
+			"Bollywood",
+			"Dancing",
+			"Dhak Dhak",
+			"Heroine"
+		]
+	},
+	{
+		"word": "Salman Khan",
+		"forbidden": [
+			"Actor",
+			"Bollywood",
+			"Bhai",
+			"Dabangg",
+			"Superstar"
+		]
+	},
+	{
+		"word": "Rajnikanth",
+		"forbidden": [
+			"Superstar",
+			"Tamil",
+			"Actor",
+			"Thalaivar",
+			"South"
+		]
+	},
+	{
+		"word": "Shah Rukh Khan",
+		"forbidden": [
+			"King",
+			"Bollywood",
+			"Actor",
+			"Romance",
+			"Superstar"
+		]
+	},
+	{
+		"word": "Tandoori",
+		"forbidden": [
+			"Oven",
+			"Chicken",
+			"Indian",
+			"Charcoal",
+			"Spices"
+		]
+	},
+	{
+		"word": "Rasmalai",
+		"forbidden": [
+			"Dessert",
+			"Milk",
+			"Sweet",
+			"Bengali",
+			"Juicy"
+		]
+	},
+	{
+		"word": "Baap",
+		"forbidden": [
+			"Father",
+			"Dad",
+			"Old",
+			"Respect",
+			"Senior"
+		]
+	},
+	{
+		"word": "Dhokla",
+		"forbidden": [
+			"Gujarati",
+			"Steamed",
+			"Snack",
+			"Yellow",
+			"Sponge"
+		]
+	},
+	{
+		"word": "Filter Coffee",
+		"forbidden": [
+			"South",
+			"Brew",
+			"Strong",
+			"Caffeine",
+			"Traditional"
+		]
+	},
+	{
+		"word": "Khichdi",
+		"forbidden": [
+			"Rice",
+			"Lentils",
+			"Simple",
+			"Comfort",
+			"Food"
+		]
+	},
+	{
+		"word": "Jalebi",
+		"forbidden": [
+			"Sweet",
+			"Round",
+			"Sugar",
+			"Crunchy",
+			"Orange"
+		]
+	},
+	{
+		"word": "Kheer",
+		"forbidden": [
+			"Rice",
+			"Milk",
+			"Sweet",
+			"Dessert",
+			"Festive"
+		]
+	},
+	{
+		"word": "Maharaja",
+		"forbidden": [
+			"King",
+			"Royal",
+			"Ruler",
+			"Palace",
+			"India"
+		]
+	},
+	{
+		"word": "Kumbh Mela",
+		"forbidden": [
+			"Festival",
+			"Hindu",
+			"Crowd",
+			"Sacred",
+			"River"
+		]
+	},
+	{
+		"word": "Vada Pav",
+		"forbidden": [
+			"Mumbai",
+			"Street",
+			"Burger",
+			"Potato",
+			"Spicy"
+		]
+	},
+	{
+		"word": "Bhang",
+		"forbidden": [
+			"Drink",
+			"Holi",
+			"Intoxicating",
+			"Cannabis",
+			"Thandai"
+		]
+	},
+	{
+		"word": "Modi",
+		"forbidden": [
+			"PM",
+			"India",
+			"Politics",
+			"BJP",
+			"Leader"
+		]
+	},
+	{
+		"word": "Rangoli",
+		"forbidden": [
+			"Diwali",
+			"Design",
+			"Colors",
+			"Floor",
+			"Decorate"
+		]
+	},
+	{
+		"word": "Samosa",
+		"forbidden": [
+			"Snack",
+			"Fried",
+			"Potato",
+			"Triangular",
+			"Spicy"
+		]
+	},
+	{
+		"word": "Yogurt",
+		"forbidden": [
+			"Curd",
+			"Dahi",
+			"Probiotic",
+			"Milk",
+			"Fermented"
+		]
+	},
+	{
+		"word": "Ayurveda",
+		"forbidden": [
+			"Medicine",
+			"Herbal",
+			"Natural",
+			"Ancient",
+			"Healing"
+		]
+	},
+	{
+		"word": "Kolkata",
+		"forbidden": [
+			"City",
+			"Bengal",
+			"Howrah",
+			"Rosogolla",
+			"Durga Puja"
+		]
+	},
+	{
+		"word": "Auto",
+		"forbidden": [
+			"Rickshaw",
+			"Meter",
+			"Fare",
+			"Driver",
+			"Three-wheeler"
+		]
+	},
+	{
+		"word": "Dosa",
+		"forbidden": [
+			"South",
+			"Crispy",
+			"Rice",
+			"Fermented",
+			"Breakfast"
+		]
+	},
+	{
+		"word": "Bug",
+		"forbidden": [
+			"Error",
+			"Code",
+			"Fix",
+			"Debug",
+			"Glitch"
+		]
+	},
+	{
+		"word": "Stack Overflow",
+		"forbidden": [
+			"Website",
+			"Code",
+			"Help",
+			"Programmers",
+			"Search"
+		]
+	},
+	{
+		"word": "Syntax Error",
+		"forbidden": [
+			"Mistake",
+			"Code",
+			"Compile",
+			"Wrong",
+			"Semicolon"
+		]
+	},
+	{
+		"word": "Hello World",
+		"forbidden": [
+			"First",
+			"Print",
+			"Beginner",
+			"Code",
+			"Example"
+		]
+	},
+	{
+		"word": "Recursion",
+		"forbidden": [
+			"Function",
+			"Loop",
+			"Infinite",
+			"Repeat",
+			"Self"
+		]
+	},
+	{
+		"word": "404",
+		"forbidden": [
+			"Error",
+			"Not Found",
+			"Website",
+			"Page",
+			"Internet"
+		]
+	},
+	{
+		"word": "Git",
+		"forbidden": [
+			"Version",
+			"Commit",
+			"Push",
+			"Merge",
+			"Repository"
+		]
+	},
+	{
+		"word": "Merge Conflict",
+		"forbidden": [
+			"Git",
+			"Code",
+			"Changes",
+			"Branches",
+			"Resolve"
+		]
+	},
+	{
+		"word": "VPN",
+		"forbidden": [
+			"Private",
+			"Secure",
+			"Internet",
+			"Hide",
+			"Network"
+		]
+	},
+	{
+		"word": "Cache",
+		"forbidden": [
+			"Memory",
+			"Store",
+			"Temporary",
+			"Fast",
+			"Data"
+		]
+	},
+	{
+		"word": "Regex",
+		"forbidden": [
+			"Pattern",
+			"Match",
+			"Search",
+			"Complex",
+			"String"
+		]
+	},
+	{
+		"word": "Python",
+		"forbidden": [
+			"Language",
+			"Code",
+			"Snake",
+			"Programming",
+			"Script"
+		]
+	},
+	{
+		"word": "JavaScript",
+		"forbidden": [
+			"Web",
+			"Frontend",
+			"Language",
+			"Script",
+			"Browser"
+		]
+	},
+	{
+		"word": "Pointer",
+		"forbidden": [
+			"C",
+			"Memory",
+			"Address",
+			"Variable",
+			"Null"
+		]
+	},
+	{
+		"word": "Null Pointer",
+		"forbidden": [
+			"Error",
+			"Crash",
+			"Reference",
+			"Memory",
+			"Segfault"
+		]
+	},
+	{
+		"word": "Binary",
+		"forbidden": [
+			"1",
+			"0",
+			"Bits",
+			"Computer",
+			"System"
+		]
+	},
+	{
+		"word": "Compiler",
+		"forbidden": [
+			"Translate",
+			"Code",
+			"Execute",
+			"Program",
+			"Convert"
+		]
+	},
+	{
+		"word": "Cloud",
+		"forbidden": [
+			"Server",
+			"Storage",
+			"Internet",
+			"Data",
+			"AWS"
+		]
+	},
+	{
+		"word": "Blockchain",
+		"forbidden": [
+			"Bitcoin",
+			"Crypto",
+			"Decentralized",
+			"Ledger",
+			"Chain"
+		]
+	},
+	{
+		"word": "DDoS",
+		"forbidden": [
+			"Attack",
+			"Server",
+			"Traffic",
+			"Hackers",
+			"Request"
+		]
+	},
+	{
+		"word": "AI",
+		"forbidden": [
+			"Machine",
+			"Learning",
+			"Intelligence",
+			"Robot",
+			"Data"
+		]
+	},
+	{
+		"word": "Big O",
+		"forbidden": [
+			"Complexity",
+			"Time",
+			"Algorithm",
+			"Efficiency",
+			"Growth"
+		]
+	},
+	{
+		"word": "Lambda",
+		"forbidden": [
+			"Function",
+			"Anonymous",
+			"Expression",
+			"Python",
+			"AWS"
+		]
+	},
+	{
+		"word": "Overloading",
+		"forbidden": [
+			"Method",
+			"Function",
+			"Arguments",
+			"Same",
+			"Name"
+		]
+	},
+	{
+		"word": "Deadlock",
+		"forbidden": [
+			"Threads",
+			"Process",
+			"Blocked",
+			"Waiting",
+			"System"
+		]
+	},
+	{
+		"word": "Infinite Loop",
+		"forbidden": [
+			"Never",
+			"Stop",
+			"Code",
+			"Repeat",
+			"Break"
+		]
+	},
+	{
+		"word": "Hackathon",
+		"forbidden": [
+			"Coding",
+			"Event",
+			"Project",
+			"Team",
+			"24 Hours"
+		]
+	},
+	{
+		"word": "Freelancer",
+		"forbidden": [
+			"Work",
+			"Project",
+			"Client",
+			"Remote",
+			"Gig"
+		]
+	},
+	{
+		"word": "CAPTCHA",
+		"forbidden": [
+			"Robot",
+			"Verify",
+			"Security",
+			"Click",
+			"Test"
+		]
+	},
+	{
+		"word": "PHP",
+		"forbidden": [
+			"Language",
+			"Web",
+			"Server",
+			"Script",
+			"Outdated"
+		]
+	},
+	{
+		"word": "HTML",
+		"forbidden": [
+			"Web",
+			"Markup",
+			"Tags",
+			"Structure",
+			"Code"
+		]
+	},
+	{
+		"word": "Framework",
+		"forbidden": [
+			"Library",
+			"Code",
+			"Develop",
+			"Support",
+			"System"
+		]
+	},
+	{
+		"word": "Scrum",
+		"forbidden": [
+			"Agile",
+			"Meeting",
+			"Sprint",
+			"Project",
+			"Team"
+		]
+	},
+	{
+		"word": "CI/CD",
+		"forbidden": [
+			"Pipeline",
+			"Deploy",
+			"Automation",
+			"DevOps",
+			"Build"
+		]
+	},
+	{
+		"word": "NoSQL",
+		"forbidden": [
+			"Database",
+			"MongoDB",
+			"Schema",
+			"Query",
+			"Document"
+		]
+	},
+	{
+		"word": "Debugging",
+		"forbidden": [
+			"Fix",
+			"Code",
+			"Problem",
+			"Error",
+			"Issue"
+		]
+	},
+	{
+		"word": "Boolean",
+		"forbidden": [
+			"True",
+			"False",
+			"Logic",
+			"Condition",
+			"Binary"
+		]
+	},
+	{
+		"word": "Cybersecurity",
+		"forbidden": [
+			"Hackers",
+			"Protect",
+			"Data",
+			"Internet",
+			"Threat"
+		]
+	},
+	{
+		"word": "Easter Egg",
+		"forbidden": [
+			"Secret",
+			"Hidden",
+			"Feature",
+			"Surprise",
+			"Code"
+		]
+	},
+	{
+		"word": "Docker",
+		"forbidden": [
+			"Container",
+			"DevOps",
+			"Application",
+			"Deploy",
+			"Image"
+		]
+	},
+	{
+		"word": "Algorithm",
+		"forbidden": [
+			"Steps",
+			"Solve",
+			"Problem",
+			"Sorting",
+			"Logic"
+		]
+	},
+	{
+		"word": "Frontend",
+		"forbidden": [
+			"UI",
+			"Website",
+			"React",
+			"JavaScript",
+			"CSS"
+		]
+	},
+	{
+		"word": "Backend",
+		"forbidden": [
+			"Server",
+			"Database",
+			"API",
+			"Logic",
+			"Code"
+		]
+	},
+	{
+		"word": "API",
+		"forbidden": [
+			"Connect",
+			"Request",
+			"Data",
+			"Interface",
+			"Service"
+		]
+	},
+	{
+		"word": "DevOps",
+		"forbidden": [
+			"Development",
+			"Operations",
+			"Automation",
+			"Deploy",
+			"Pipeline"
+		]
+	},
+	{
+		"word": "Cloud Computing",
+		"forbidden": [
+			"AWS",
+			"Azure",
+			"Google",
+			"Storage",
+			"Server"
+		]
+	},
+	{
+		"word": "Software Engineer",
+		"forbidden": [
+			"Code",
+			"Develop",
+			"Company",
+			"Programmer",
+			"Job"
+		]
+	},
+	{
+		"word": "Tech Debt",
+		"forbidden": [
+			"Legacy",
+			"Refactor",
+			"Old",
+			"Messy",
+			"Code"
+		]
+	},
+	{
+		"word": "Jugaad",
+		"forbidden": [
+			"Hack",
+			"Shortcut",
+			"Fix",
+			"Indian",
+			"Solution"
+		]
+	},
+	{
+		"word": "Internship",
+		"forbidden": [
+			"Unpaid",
+			"Experience",
+			"Job",
+			"Company",
+			"Certificate"
+		]
+	},
+	{
+		"word": "Last Minute",
+		"forbidden": [
+			"Exam",
+			"Study",
+			"Deadline",
+			"Assignment",
+			"Cram"
+		]
+	},
+	{
+		"word": "Sleep",
+		"forbidden": [
+			"Night",
+			"Lecture",
+			"Tired",
+			"Exams",
+			"Dream"
+		]
+	},
+	{
+		"word": "Hostel",
+		"forbidden": [
+			"Room",
+			"Mess",
+			"WiFi",
+			"Friends",
+			"Canteen"
+		]
+	},
+	{
+		"word": "Proxy",
+		"forbidden": [
+			"Attendance",
+			"Lecture",
+			"Roll Call",
+			"Friend",
+			"Teacher"
+		]
+	},
+	{
+		"word": "WiFi",
+		"forbidden": [
+			"Slow",
+			"Hostel",
+			"Buffer",
+			"Internet",
+			"Router"
+		]
+	},
+	{
+		"word": "Backlog",
+		"forbidden": [
+			"Fail",
+			"Exam",
+			"Subject",
+			"Reappear",
+			"Semester"
+		]
+	},
+	{
+		"word": "Assignment",
+		"forbidden": [
+			"Copy",
+			"Submit",
+			"Deadline",
+			"Late",
+			"Plagiarism"
+		]
+	},
+	{
+		"word": "Exam Hall",
+		"forbidden": [
+			"Paper",
+			"Cheating",
+			"Invigilator",
+			"OMR",
+			"Tension"
+		]
+	},
+	{
+		"word": "Group Project",
+		"forbidden": [
+			"Team",
+			"Work",
+			"Lazy",
+			"Presentation",
+			"Deadline"
+		]
+	},
+	{
+		"word": "Canteen",
+		"forbidden": [
+			"Food",
+			"Mess",
+			"Tea",
+			"Friends",
+			"Hangout"
+		]
+	},
+	{
+		"word": "Placement",
+		"forbidden": [
+			"Job",
+			"Interview",
+			"Package",
+			"Resume",
+			"HR"
+		]
+	},
+	{
+		"word": "Fresher’s Party",
+		"forbidden": [
+			"Dance",
+			"Juniors",
+			"DJ",
+			"Fun",
+			"Welcome"
+		]
+	},
+	{
+		"word": "Seniors",
+		"forbidden": [
+			"Ragging",
+			"Advice",
+			"Guide",
+			"Help",
+			"Respect"
+		]
+	},
+	{
+		"word": "Coding",
+		"forbidden": [
+			"Laptop",
+			"Debug",
+			"Python",
+			"Java",
+			"Error"
+		]
+	},
+	{
+		"word": "Internals",
+		"forbidden": [
+			"Marks",
+			"Tests",
+			"Professor",
+			"Surprise",
+			"Stress"
+		]
+	},
+	{
+		"word": "Lab",
+		"forbidden": [
+			"Experiments",
+			"Report",
+			"Chemistry",
+			"Physics",
+			"Submission"
+		]
+	},
+	{
+		"word": "Google",
+		"forbidden": [
+			"Search",
+			"Answers",
+			"Homework",
+			"Help",
+			"Cheat"
+		]
+	},
+	{
+		"word": "Cheat Sheet",
+		"forbidden": [
+			"Exam",
+			"Tiny",
+			"Hidden",
+			"Answers",
+			"Paper"
+		]
+	},
+	{
+		"word": "Hackathon",
+		"forbidden": [
+			"Coding",
+			"Project",
+			"Competition",
+			"Sleep",
+			"Team"
+		]
+	},
+	{
+		"word": "Syllabus",
+		"forbidden": [
+			"Course",
+			"Subjects",
+			"Book",
+			"Exam",
+			"Professor"
+		]
+	},
+	{
+		"word": "9 Pointer",
+		"forbidden": [
+			"CGPA",
+			"Topper",
+			"Genius",
+			"Smart",
+			"Nerd"
+		]
+	},
+	{
+		"word": "Bunk",
+		"forbidden": [
+			"Class",
+			"Skip",
+			"Friends",
+			"Movie",
+			"Attendance"
+		]
+	},
+	{
+		"word": "Professor",
+		"forbidden": [
+			"Lecture",
+			"Teaching",
+			"Strict",
+			"Questions",
+			"Marks"
+		]
+	},
+	{
+		"word": "Library",
+		"forbidden": [
+			"Books",
+			"Study",
+			"Quiet",
+			"Borrow",
+			"Reading"
+		]
+	},
+	{
+		"word": "Internals",
+		"forbidden": [
+			"Marks",
+			"Quiz",
+			"Surprise",
+			"Professor",
+			"Assignment"
+		]
+	},
+	{
+		"word": "Coding Contest",
+		"forbidden": [
+			"LeetCode",
+			"HackerRank",
+			"Algorithm",
+			"DSA",
+			"Problem"
+		]
+	},
+	{
+		"word": "DSA",
+		"forbidden": [
+			"Data",
+			"Structure",
+			"Algorithms",
+			"Competitive",
+			"Interview"
+		]
+	},
+	{
+		"word": "MATLAB",
+		"forbidden": [
+			"Software",
+			"Math",
+			"Engineering",
+			"Simulation",
+			"Code"
+		]
+	},
+	{
+		"word": "LAN Gaming",
+		"forbidden": [
+			"Counter Strike",
+			"Hostel",
+			"Friends",
+			"PC",
+			"Battle"
+		]
+	},
+	{
+		"word": "Crush",
+		"forbidden": [
+			"College",
+			"Love",
+			"Secret",
+			"Flirt",
+			"One-sided"
+		]
+	},
+	{
+		"word": "Festival",
+		"forbidden": [
+			"College",
+			"Annual",
+			"Concert",
+			"Dance",
+			"DJ"
+		]
+	},
+	{
+		"word": "JEE",
+		"forbidden": [
+			"Exam",
+			"Entrance",
+			"Engineering",
+			"Physics",
+			"Math"
+		]
+	},
+	{
+		"word": "Dropout",
+		"forbidden": [
+			"Quit",
+			"College",
+			"Startup",
+			"Failed",
+			"Degree"
+		]
+	},
+	{
+		"word": "Tinder",
+		"forbidden": [
+			"Dating",
+			"Swipe",
+			"Match",
+			"Hookup",
+			"Chat"
+		]
+	},
+	{
+		"word": "AI",
+		"forbidden": [
+			"Artificial",
+			"Machine",
+			"Learning",
+			"Technology",
+			"Future"
+		]
+	},
+	{
+		"word": "Campus Ambassador",
+		"forbidden": [
+			"Event",
+			"College",
+			"Brand",
+			"Promotion",
+			"Free"
+		]
+	},
+	{
+		"word": "Startup",
+		"forbidden": [
+			"Business",
+			"Idea",
+			"Funding",
+			"Company",
+			"Entrepreneur"
+		]
+	},
+	{
+		"word": "Midnight Maggi",
+		"forbidden": [
+			"Hostel",
+			"Food",
+			"Hungry",
+			"Late Night",
+			"Noodles"
+		]
+	},
+	{
+		"word": "Viva",
+		"forbidden": [
+			"Oral",
+			"Questions",
+			"Exam",
+			"Professor",
+			"Confused"
+		]
+	},
+	{
+		"word": "Online Classes",
+		"forbidden": [
+			"Zoom",
+			"Mute",
+			"Camera Off",
+			"WiFi",
+			"Sleep"
+		]
+	},
+	{
+		"word": "Recordings",
+		"forbidden": [
+			"Lecture",
+			"Watch Later",
+			"Exam",
+			"Notes",
+			"Backup"
+		]
+	},
+	{
+		"word": "Self Study",
+		"forbidden": [
+			"Notes",
+			"Alone",
+			"Library",
+			"Concentration",
+			"Hard"
+		]
+	},
+	{
+		"word": "Campus Crush",
+		"forbidden": [
+			"Pretty",
+			"College",
+			"Secret",
+			"Love",
+			"Flirt"
+		]
+	},
+	{
+		"word": "LinkedIn",
+		"forbidden": [
+			"Professional",
+			"Network",
+			"Job",
+			"Resume",
+			"HR"
+		]
+	},
+	{
+		"word": "Free WiFi",
+		"forbidden": [
+			"Hostel",
+			"Slow",
+			"Unlimited",
+			"Hacker",
+			"Campus"
+		]
+	},
+	{
+		"word": "Batchmates",
+		"forbidden": [
+			"Friends",
+			"College",
+			"Class",
+			"Group",
+			"Same Year"
+		]
+	},
+	{
+		"word": "Orkut",
+		"forbidden": [
+			"Social Media",
+			"Scrap",
+			"Testimonial",
+			"Google",
+			"Friends"
+		]
+	},
+	{
+		"word": "Walkman",
+		"forbidden": [
+			"Cassette",
+			"Music",
+			"Sony",
+			"Portable",
+			"Headphones"
+		]
+	},
+	{
+		"word": "Floppy Disk",
+		"forbidden": [
+			"Save",
+			"Storage",
+			"Old",
+			"Computer",
+			"Insert"
+		]
+	},
+	{
+		"word": "Yahoo",
+		"forbidden": [
+			"Chat",
+			"Emoji",
+			"Ping",
+			"Mail",
+			"Purple"
+		]
+	},
+	{
+		"word": "CD Burning",
+		"forbidden": [
+			"Write",
+			"Music",
+			"Piracy",
+			"Computer",
+			"Disc"
+		]
+	},
+	{
+		"word": "Brick Game",
+		"forbidden": [
+			"Tetris",
+			"Game",
+			"LCD",
+			"Old",
+			"Handheld"
+		]
+	},
+	{
+		"word": "Snake Game",
+		"forbidden": [
+			"Nokia",
+			"Mobile",
+			"Classic",
+			"Pixel",
+			"Long"
+		]
+	},
+	{
+		"word": "MTV Roadies",
+		"forbidden": [
+			"Reality Show",
+			"Bike",
+			"Tasks",
+			"Abuse",
+			"Audition"
+		]
+	},
+	{
+		"word": "Dhinchak Pooja",
+		"forbidden": [
+			"Singer",
+			"Selfie",
+			"Cringe",
+			"YouTube",
+			"Autotune"
+		]
+	},
+	{
+		"word": "Viva Video",
+		"forbidden": [
+			"Editing",
+			"Mobile",
+			"Watermark",
+			"Music",
+			"Slideshow"
+		]
+	},
+	{
+		"word": "Blue Film",
+		"forbidden": [
+			"Secret",
+			"VCD",
+			"Adult",
+			"Hidden",
+			"Movie"
+		]
+	},
+	{
+		"word": "Game Boy",
+		"forbidden": [
+			"Nintendo",
+			"Console",
+			"Cartridge",
+			"Mario",
+			"Portable"
+		]
+	},
+	{
+		"word": "Beyblade",
+		"forbidden": [
+			"Spin",
+			"Anime",
+			"Let It Rip",
+			"Battle",
+			"Arena"
+		]
+	},
+	{
+		"word": "Cartoon Network",
+		"forbidden": [
+			"Tom & Jerry",
+			"Powerpuff Girls",
+			"Dexter",
+			"TV",
+			"Childhood"
+		]
+	},
+	{
+		"word": "Scooby-Doo",
+		"forbidden": [
+			"Mystery",
+			"Shaggy",
+			"Dog",
+			"Ghost",
+			"Cartoon"
+		]
+	},
+	{
+		"word": "Pokemon",
+		"forbidden": [
+			"Ash",
+			"Pikachu",
+			"Catch",
+			"Trainer",
+			"Battle"
+		]
+	},
+	{
+		"word": "Hannah Montana",
+		"forbidden": [
+			"Miley",
+			"Disney",
+			"Singer",
+			"Teen",
+			"Double Life"
+		]
+	},
+	{
+		"word": "Shaktimaan",
+		"forbidden": [
+			"Superhero",
+			"TV",
+			"Indian",
+			"Mukesh Khanna",
+			"Power"
+		]
+	},
+	{
+		"word": "Mario",
+		"forbidden": [
+			"Nintendo",
+			"Jump",
+			"Plumber",
+			"Luigi",
+			"Coins"
+		]
+	},
+	{
+		"word": "Tazo",
+		"forbidden": [
+			"Lays",
+			"Round",
+			"Collectible",
+			"Game",
+			"Chips"
+		]
+	},
+	{
+		"word": "F.R.I.E.N.D.S",
+		"forbidden": [
+			"Ross",
+			"Rachel",
+			"Joey",
+			"Sitcom",
+			"Central Perk"
+		]
+	},
+	{
+		"word": "MSN Messenger",
+		"forbidden": [
+			"Chat",
+			"Online",
+			"Buzz",
+			"Microsoft",
+			"Emoji"
+		]
+	},
+	{
+		"word": "Harry Potter",
+		"forbidden": [
+			"Wizard",
+			"Magic",
+			"Hogwarts",
+			"Spells",
+			"J.K. Rowling"
+		]
+	},
+	{
+		"word": "Twilight",
+		"forbidden": [
+			"Vampire",
+			"Bella",
+			"Edward",
+			"Werewolf",
+			"Saga"
+		]
+	},
+	{
+		"word": "Hi5",
+		"forbidden": [
+			"Social Media",
+			"Friends",
+			"Profile",
+			"Pictures",
+			"Old"
+		]
+	},
+	{
+		"word": "Temple Run",
+		"forbidden": [
+			"Game",
+			"Run",
+			"Coins",
+			"Obstacles",
+			"Escape"
+		]
+	},
+	{
+		"word": "Subway Surfers",
+		"forbidden": [
+			"Game",
+			"Train",
+			"Run",
+			"Coins",
+			"Hoverboard"
+		]
+	},
+	{
+		"word": "Bump Phones",
+		"forbidden": [
+			"Share",
+			"Contacts",
+			"Files",
+			"Old",
+			"App"
+		]
+	},
+	{
+		"word": "Windows XP",
+		"forbidden": [
+			"Microsoft",
+			"Start",
+			"OS",
+			"Computer",
+			"Icon"
+		]
+	},
+	{
+		"word": "Winamp",
+		"forbidden": [
+			"MP3",
+			"Music",
+			"Skin",
+			"Player",
+			"Sound"
+		]
+	},
+	{
+		"word": "Angry Birds",
+		"forbidden": [
+			"Slingshot",
+			"Game",
+			"Pigs",
+			"Red",
+			"Mobile"
+		]
+	},
+	{
+		"word": "Flappy Bird",
+		"forbidden": [
+			"Tap",
+			"Mobile",
+			"Hard",
+			"Pipe",
+			"Game"
+		]
+	},
+	{
+		"word": "Candy Crush",
+		"forbidden": [
+			"Match",
+			"Game",
+			"Sweet",
+			"Saga",
+			"Mobile"
+		]
+	},
+	{
+		"word": "PSP",
+		"forbidden": [
+			"Sony",
+			"Portable",
+			"Gaming",
+			"Handheld",
+			"Console"
+		]
+	},
+	{
+		"word": "Road Rash",
+		"forbidden": [
+			"Bike",
+			"Game",
+			"Racing",
+			"Punch",
+			"Police"
+		]
+	},
+	{
+		"word": "GTA Vice City",
+		"forbidden": [
+			"Tommy",
+			"Crime",
+			"Game",
+			"Car",
+			"Mission"
+		]
+	},
+	{
+		"word": "Call of Duty",
+		"forbidden": [
+			"Shooting",
+			"Game",
+			"War",
+			"Multiplayer",
+			"Guns"
+		]
+	},
+	{
+		"word": "Sims",
+		"forbidden": [
+			"Life",
+			"Game",
+			"House",
+			"Simulation",
+			"Virtual"
+		]
+	},
+	{
+		"word": "Avril Lavigne",
+		"forbidden": [
+			"Singer",
+			"Skater",
+			"Pop",
+			"Punk",
+			"Complicated"
+		]
+	},
+	{
+		"word": "Justin Bieber",
+		"forbidden": [
+			"Baby",
+			"Singer",
+			"Teen",
+			"Pop",
+			"Belieber"
+		]
+	},
+	{
+		"word": "MP3 Player",
+		"forbidden": [
+			"Music",
+			"Songs",
+			"Portable",
+			"Earphones",
+			"Old"
+		]
+	},
+	{
+		"word": "2G Internet",
+		"forbidden": [
+			"Slow",
+			"Mobile",
+			"Network",
+			"Old",
+			"Edge"
+		]
+	},
+	{
+		"word": "YouTube 2005",
+		"forbidden": [
+			"Videos",
+			"Streaming",
+			"First",
+			"Old",
+			"Upload"
+		]
+	},
+	{
+		"word": "Emo Phase",
+		"forbidden": [
+			"Black",
+			"Hair",
+			"Music",
+			"Sad",
+			"Teen"
+		]
+	},
+	{
+		"word": "Photobooth",
+		"forbidden": [
+			"Mac",
+			"Filters",
+			"Webcam",
+			"Old",
+			"Funny"
+		]
+	},
+	{
+		"word": "Club Penguin",
+		"forbidden": [
+			"Online",
+			"Kids",
+			"Banned",
+			"Disney",
+			"Penguin"
+		]
+	},
+	{
+		"word": "Paris",
+		"forbidden": [
+			"France",
+			"Eiffel Tower",
+			"Romantic",
+			"Louvre",
+			"City of Love"
+		]
+	},
+	{
+		"word": "Goa",
+		"forbidden": [
+			"Beach",
+			"India",
+			"Party",
+			"Vacation",
+			"Seafood"
+		]
+	},
+	{
+		"word": "Road Trip",
+		"forbidden": [
+			"Car",
+			"Drive",
+			"Highway",
+			"Travel",
+			"Adventure"
+		]
+	},
+	{
+		"word": "Cruise",
+		"forbidden": [
+			"Ship",
+			"Vacation",
+			"Luxury",
+			"Sea",
+			"Sail"
+		]
+	},
+	{
+		"word": "Las Vegas",
+		"forbidden": [
+			"Casino",
+			"Gambling",
+			"Nevada",
+			"Nightlife",
+			"Strip"
+		]
+	},
+	{
+		"word": "Bali",
+		"forbidden": [
+			"Indonesia",
+			"Beach",
+			"Island",
+			"Tropical",
+			"Honeymoon"
+		]
+	},
+	{
+		"word": "Backpacking",
+		"forbidden": [
+			"Travel",
+			"Hiking",
+			"Budget",
+			"Adventure",
+			"Hostel"
+		]
+	},
+	{
+		"word": "New York",
+		"forbidden": [
+			"Times Square",
+			"USA",
+			"Big Apple",
+			"Broadway",
+			"Statue of Liberty"
+		]
+	},
+	{
+		"word": "Airbnb",
+		"forbidden": [
+			"Stay",
+			"Hotel",
+			"Rental",
+			"House",
+			"Booking"
+		]
+	},
+	{
+		"word": "Safari",
+		"forbidden": [
+			"Animals",
+			"Wildlife",
+			"Africa",
+			"Jeep",
+			"Nature"
+		]
+	},
+	{
+		"word": "Diwali",
+		"forbidden": [
+			"Lights",
+			"Hindu",
+			"Fireworks",
+			"Festival",
+			"India"
+		]
+	},
+	{
+		"word": "Christmas",
+		"forbidden": [
+			"Santa",
+			"Tree",
+			"Presents",
+			"December",
+			"Holiday"
+		]
+	},
+	{
+		"word": "Oktoberfest",
+		"forbidden": [
+			"Beer",
+			"Germany",
+			"Festival",
+			"Bavaria",
+			"Celebration"
+		]
+	},
+	{
+		"word": "Halloween",
+		"forbidden": [
+			"Costume",
+			"Pumpkin",
+			"Trick-or-Treat",
+			"Scary",
+			"Candy"
+		]
+	},
+	{
+		"word": "Holi",
+		"forbidden": [
+			"Colors",
+			"Festival",
+			"India",
+			"Spring",
+			"Water"
+		]
+	},
+	{
+		"word": "Thanksgiving",
+		"forbidden": [
+			"Turkey",
+			"Dinner",
+			"November",
+			"Family",
+			"Gratitude"
+		]
+	},
+	{
+		"word": "Eid",
+		"forbidden": [
+			"Ramadan",
+			"Muslim",
+			"Feast",
+			"Prayer",
+			"Moon"
+		]
+	},
+	{
+		"word": "New Year",
+		"forbidden": [
+			"Midnight",
+			"Party",
+			"Countdown",
+			"Fireworks",
+			"Celebration"
+		]
+	},
+	{
+		"word": "Mardi Gras",
+		"forbidden": [
+			"Parade",
+			"New Orleans",
+			"Beads",
+			"Costume",
+			"Carnival"
+		]
+	},
+	{
+		"word": "Eiffel Tower",
+		"forbidden": [
+			"Paris",
+			"France",
+			"Metal",
+			"Tall",
+			"Tourist"
+		]
+	},
+	{
+		"word": "Taj Mahal",
+		"forbidden": [
+			"India",
+			"Agra",
+			"Marble",
+			"Love",
+			"Mughal"
+		]
+	},
+	{
+		"word": "Burj Khalifa",
+		"forbidden": [
+			"Dubai",
+			"Tallest",
+			"Skyscraper",
+			"UAE",
+			"Building"
+		]
+	},
+	{
+		"word": "Machu Picchu",
+		"forbidden": [
+			"Peru",
+			"Inca",
+			"Ruins",
+			"Ancient",
+			"Mountains"
+		]
+	},
+	{
+		"word": "Colosseum",
+		"forbidden": [
+			"Rome",
+			"Italy",
+			"Gladiator",
+			"Arena",
+			"Ancient"
+		]
+	},
+	{
+		"word": "Pyramids of Giza",
+		"forbidden": [
+			"Egypt",
+			"Desert",
+			"Pharaoh",
+			"Tomb",
+			"Triangle"
+		]
+	},
+	{
+		"word": "Niagara Falls",
+		"forbidden": [
+			"Waterfall",
+			"Canada",
+			"USA",
+			"Tourist",
+			"River"
+		]
+	}
+]

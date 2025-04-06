@@ -583,6 +583,9 @@ class _GameplayScreenState extends State<GameplayScreen>
     final double buttonSize = 85;
     final double iconPadding = 20;
 
+    // Check if this is the skip button with infinite skips
+    final bool isInfiniteSkips = buttonType == "skip" && label == "∞";
+
     return GestureDetector(
       onTap: enabled ? onTap : null,
       child: Opacity(
@@ -618,7 +621,8 @@ class _GameplayScreenState extends State<GameplayScreen>
             ),
 
             // Skip counter badge (positioned outside the button)
-            if (buttonType == "skip" && label.isNotEmpty)
+            // Only show if it's not infinite skips
+            if (buttonType == "skip" && label.isNotEmpty && !isInfiniteSkips)
               Positioned(
                 top: -4,
                 left: -4,

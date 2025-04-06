@@ -430,16 +430,6 @@
 		]
 	},
 	{
-		"word": "Laptop",
-		"forbidden": [
-			"Work",
-			"Computer",
-			"Internet",
-			"Typing",
-			"Portable"
-		]
-	},
-	{
 		"word": "Candle",
 		"forbidden": [
 			"Wax",
@@ -597,16 +587,6 @@
 			"Down",
 			"Building",
 			"Floor"
-		]
-	},
-	{
-		"word": "Compass",
-		"forbidden": [
-			"Direction",
-			"North",
-			"South",
-			"East",
-			"West"
 		]
 	},
 	{
@@ -800,16 +780,6 @@
 		]
 	},
 	{
-		"word": "Candle",
-		"forbidden": [
-			"Wax",
-			"Flame",
-			"Light",
-			"Melt",
-			"Stick"
-		]
-	},
-	{
 		"word": "Broom",
 		"forbidden": [
 			"Sweep",
@@ -887,16 +857,6 @@
 			"Blow",
 			"Nose",
 			"Box"
-		]
-	},
-	{
-		"word": "Cloud",
-		"forbidden": [
-			"White",
-			"Fluffy",
-			"Sky",
-			"Rain",
-			"Storm"
 		]
 	},
 	{
@@ -1310,16 +1270,6 @@
 		]
 	},
 	{
-		"word": "Puzzle",
-		"forbidden": [
-			"Solve",
-			"Pieces",
-			"Brain",
-			"Challenge",
-			"Game"
-		]
-	},
-	{
 		"word": "Flamingo",
 		"forbidden": [
 			"Pink",
@@ -1470,16 +1420,6 @@
 		]
 	},
 	{
-		"word": "Spanking",
-		"forbidden": [
-			"Hand",
-			"Punish",
-			"BDSM",
-			"Butt",
-			"Kink"
-		]
-	},
-	{
 		"word": "Moan",
 		"forbidden": [
 			"Sound",
@@ -1587,16 +1527,6 @@
 			"Money",
 			"Lap Dance",
 			"Stage"
-		]
-	},
-	{
-		"word": "Naughty",
-		"forbidden": [
-			"Mischief",
-			"Sexy",
-			"Flirt",
-			"Dirty",
-			"Spank"
 		]
 	},
 	{
@@ -1787,26 +1717,6 @@
 			"Hit",
 			"Punish",
 			"BDSM"
-		]
-	},
-	{
-		"word": "Moist",
-		"forbidden": [
-			"Wet",
-			"Soft",
-			"Lips",
-			"Tongue",
-			"Damp"
-		]
-	},
-	{
-		"word": "Lick",
-		"forbidden": [
-			"Tongue",
-			"Taste",
-			"Wet",
-			"Suck",
-			"Mouth"
 		]
 	},
 	{
@@ -2380,16 +2290,6 @@
 		]
 	},
 	{
-		"word": "Holi",
-		"forbidden": [
-			"Colors",
-			"Festival",
-			"Water",
-			"Gulaal",
-			"March"
-		]
-	},
-	{
 		"word": "Rajma",
 		"forbidden": [
 			"Kidney Beans",
@@ -2417,16 +2317,6 @@
 			"Lies",
 			"Drama",
 			"Comedy"
-		]
-	},
-	{
-		"word": "Jugaad",
-		"forbidden": [
-			"Hack",
-			"Solution",
-			"Indian",
-			"Creative",
-			"Fix"
 		]
 	},
 	{
@@ -2940,16 +2830,6 @@
 		]
 	},
 	{
-		"word": "Cloud",
-		"forbidden": [
-			"Server",
-			"Storage",
-			"Internet",
-			"Data",
-			"AWS"
-		]
-	},
-	{
 		"word": "Blockchain",
 		"forbidden": [
 			"Bitcoin",
@@ -3410,16 +3290,6 @@
 		]
 	},
 	{
-		"word": "Internals",
-		"forbidden": [
-			"Marks",
-			"Tests",
-			"Professor",
-			"Surprise",
-			"Stress"
-		]
-	},
-	{
 		"word": "Lab",
 		"forbidden": [
 			"Experiments",
@@ -3447,16 +3317,6 @@
 			"Hidden",
 			"Answers",
 			"Paper"
-		]
-	},
-	{
-		"word": "Hackathon",
-		"forbidden": [
-			"Coding",
-			"Project",
-			"Competition",
-			"Sleep",
-			"Team"
 		]
 	},
 	{
@@ -3497,16 +3357,6 @@
 			"Strict",
 			"Questions",
 			"Marks"
-		]
-	},
-	{
-		"word": "Library",
-		"forbidden": [
-			"Books",
-			"Study",
-			"Quiet",
-			"Borrow",
-			"Reading"
 		]
 	},
 	{
@@ -3607,16 +3457,6 @@
 			"Match",
 			"Hookup",
 			"Chat"
-		]
-	},
-	{
-		"word": "AI",
-		"forbidden": [
-			"Artificial",
-			"Machine",
-			"Learning",
-			"Technology",
-			"Future"
 		]
 	},
 	{
@@ -4290,16 +4130,6 @@
 		]
 	},
 	{
-		"word": "Diwali",
-		"forbidden": [
-			"Lights",
-			"Hindu",
-			"Fireworks",
-			"Festival",
-			"India"
-		]
-	},
-	{
 		"word": "Christmas",
 		"forbidden": [
 			"Santa",
@@ -4447,6 +4277,716 @@
 			"USA",
 			"Tourist",
 			"River"
+		]
+	},
+	{
+		"word": "Blender",
+		"forbidden": [
+			"Smoothie",
+			"Mix",
+			"Kitchen",
+			"Appliance",
+			"Chop"
+		]
+	},
+	{
+		"word": "Slippers",
+		"forbidden": [
+			"Feet",
+			"House",
+			"Shoes",
+			"Comfort",
+			"Socks"
+		]
+	},
+	{
+		"word": "Fireworks",
+		"forbidden": [
+			"Explosion",
+			"Sky",
+			"Noise",
+			"Celebration",
+			"Sparklers"
+		]
+	},
+	{
+		"word": "Nail Polish",
+		"forbidden": [
+			"Fingers",
+			"Color",
+			"Paint",
+			"Manicure",
+			"Shiny"
+		]
+	},
+	{
+		"word": "Headband",
+		"forbidden": [
+			"Hair",
+			"Forehead",
+			"Tie",
+			"Sport",
+			"Stretch"
+		]
+	},
+	{
+		"word": "Pop Socket",
+		"forbidden": [
+			"Phone",
+			"Grip",
+			"Back",
+			"Hold",
+			"Accessory"
+		]
+	},
+	{
+		"word": "Bubblegum",
+		"forbidden": [
+			"Chew",
+			"Pink",
+			"Sticky",
+			"Blow",
+			"Mouth"
+		]
+	},
+	{
+		"word": "Sandcastle",
+		"forbidden": [
+			"Beach",
+			"Bucket",
+			"Shovel",
+			"Build",
+			"Waves"
+		]
+	},
+	{
+		"word": "Picnic",
+		"forbidden": [
+			"Food",
+			"Basket",
+			"Park",
+			"Blanket",
+			"Outdoors"
+		]
+	},
+	{
+		"word": "Frisbee",
+		"forbidden": [
+			"Throw",
+			"Catch",
+			"Disc",
+			"Park",
+			"Dog"
+		]
+	},
+	{
+		"word": "Igloo",
+		"forbidden": [
+			"Snow",
+			"Cold",
+			"Eskimo",
+			"Ice",
+			"Dome"
+		]
+	},
+	{
+		"word": "Unicorn",
+		"forbidden": [
+			"Horn",
+			"Horse",
+			"Mythical",
+			"Magic",
+			"Rainbow"
+		]
+	},
+	{
+		"word": "Snowman",
+		"forbidden": [
+			"Winter",
+			"Carrot",
+			"Frosty",
+			"Cold",
+			"Build"
+		]
+	},
+	{
+		"word": "Windmill",
+		"forbidden": [
+			"Blades",
+			"Wind",
+			"Power",
+			"Dutch",
+			"Spin"
+		]
+	},
+	{
+		"word": "Marshmallow",
+		"forbidden": [
+			"Sweet",
+			"Campfire",
+			"Soft",
+			"White",
+			"S'mores"
+		]
+	},
+	{
+		"word": "Candyfloss",
+		"forbidden": [
+			"Pink",
+			"Sugar",
+			"Fair",
+			"Stick",
+			"Fluffy"
+		]
+	},
+	{
+		"word": "Hurdles",
+		"forbidden": [
+			"Jump",
+			"Track",
+			"Race",
+			"Obstacle",
+			"Run"
+		]
+	},
+	{
+		"word": "Stopwatch",
+		"forbidden": [
+			"Timer",
+			"Seconds",
+			"Track",
+			"Button",
+			"Start"
+		]
+	},
+	{
+		"word": "Seesaw",
+		"forbidden": [
+			"Park",
+			"Up",
+			"Down",
+			"Balance",
+			"Playground"
+		]
+	},
+	{
+		"word": "Trampoline",
+		"forbidden": [
+			"Jump",
+			"Bounce",
+			"Spring",
+			"Mat",
+			"Flip"
+		]
+	},
+	{
+		"word": "Ice Cream",
+		"forbidden": [
+			"Cone",
+			"Cold",
+			"Scoop",
+			"Dessert",
+			"Melt"
+		]
+	},
+	{
+		"word": "Hairbrush",
+		"forbidden": [
+			"Comb",
+			"Tangle",
+			"Hair",
+			"Bristles",
+			"Stroke"
+		]
+	},
+	{
+		"word": "Doorbell",
+		"forbidden": [
+			"Ring",
+			"Knock",
+			"Sound",
+			"Visitor",
+			"Push"
+		]
+	},
+	{
+		"word": "Surfboard",
+		"forbidden": [
+			"Waves",
+			"Ocean",
+			"Ride",
+			"Beach",
+			"Balance"
+		]
+	},
+	{
+		"word": "Snowboard",
+		"forbidden": [
+			"Winter",
+			"Mountain",
+			"Snow",
+			"Ride",
+			"Slope"
+		]
+	},
+	{
+		"word": "Beanbag",
+		"forbidden": [
+			"Chair",
+			"Soft",
+			"Sit",
+			"Throw",
+			"Cushion"
+		]
+	},
+	{
+		"word": "Hairdryer",
+		"forbidden": [
+			"Blow",
+			"Hot",
+			"Salon",
+			"Electric",
+			"Wet"
+		]
+	},
+	{
+		"word": "Keychain",
+		"forbidden": [
+			"Keys",
+			"Ring",
+			"Hold",
+			"Metal",
+			"Pocket"
+		]
+	},
+	{
+		"word": "Shoelace",
+		"forbidden": [
+			"Tie",
+			"Shoe",
+			"Loop",
+			"Knot",
+			"String"
+		]
+	},
+	{
+		"word": "Sidecar",
+		"forbidden": [
+			"Motorcycle",
+			"Seat",
+			"Attached",
+			"Ride",
+			"Passenger"
+		]
+	},
+	{
+		"word": "Mixer",
+		"forbidden": [
+			"Stir",
+			"Kitchen",
+			"Blend",
+			"Electric",
+			"Cook"
+		]
+	},
+	{
+		"word": "Lipstick",
+		"forbidden": [
+			"Lips",
+			"Color",
+			"Makeup",
+			"Red",
+			"Tube"
+		]
+	},
+	{
+		"word": "Eyeliner",
+		"forbidden": [
+			"Eyes",
+			"Black",
+			"Makeup",
+			"Pencil",
+			"Wing"
+		]
+	},
+	{
+		"word": "Mascara",
+		"forbidden": [
+			"Eyelashes",
+			"Brush",
+			"Makeup",
+			"Volume",
+			"Black"
+		]
+	},
+	{
+		"word": "Nailcutter",
+		"forbidden": [
+			"Trim",
+			"Fingers",
+			"Tool",
+			"Clippers",
+			"Short"
+		]
+	},
+	{
+		"word": "Raincoat",
+		"forbidden": [
+			"Wet",
+			"Jacket",
+			"Umbrella",
+			"Waterproof",
+			"Storm"
+		]
+	},
+	{
+		"word": "Thermos",
+		"forbidden": [
+			"Hot",
+			"Flask",
+			"Cold",
+			"Liquid",
+			"Bottle"
+		]
+	},
+	{
+		"word": "Walkie Talkie",
+		"forbidden": [
+			"Radio",
+			"Talk",
+			"Communication",
+			"Pair",
+			"Button"
+		]
+	},
+	{
+		"word": "Flashlight",
+		"forbidden": [
+			"Dark",
+			"Battery",
+			"Torch",
+			"Light",
+			"Beam"
+		]
+	},
+	{
+		"word": "Nightlight",
+		"forbidden": [
+			"Sleep",
+			"Child",
+			"Dim",
+			"Lamp",
+			"Dark"
+		]
+	},
+	{
+		"word": "Doormat",
+		"forbidden": [
+			"Feet",
+			"Welcome",
+			"Door",
+			"Clean",
+			"Mat"
+		]
+	},
+	{
+		"word": "Firetruck",
+		"forbidden": [
+			"Red",
+			"Ladder",
+			"Siren",
+			"Hose",
+			"Emergency"
+		]
+	},
+	{
+		"word": "Paperclip",
+		"forbidden": [
+			"Hold",
+			"Documents",
+			"Metal",
+			"Office",
+			"Clip"
+		]
+	},
+	{
+		"word": "Screwdriver",
+		"forbidden": [
+			"Tool",
+			"Screw",
+			"Twist",
+			"Handle",
+			"Flathead"
+		]
+	},
+	{
+		"word": "Toothpaste",
+		"forbidden": [
+			"Brush",
+			"Teeth",
+			"Tube",
+			"Mint",
+			"Morning"
+		]
+	},
+	{
+		"word": "Measuring Tape",
+		"forbidden": [
+			"Length",
+			"Inch",
+			"Roll",
+			"Tool",
+			"Ruler"
+		]
+	},
+	{
+		"word": "Stapler",
+		"forbidden": [
+			"Paper",
+			"Office",
+			"Attach",
+			"Pin",
+			"Click"
+		]
+	},
+	{
+		"word": "Lighter",
+		"forbidden": [
+			"Fire",
+			"Flame",
+			"Cigarette",
+			"Match",
+			"Gas"
+		]
+	},
+	{
+		"word": "Umbrella",
+		"forbidden": [
+			"Rain",
+			"Wet",
+			"Open",
+			"Handle",
+			"Cover"
+		]
+	},
+	{
+		"word": "Skipping Rope",
+		"forbidden": [
+			"Jump",
+			"Exercise",
+			"Swing",
+			"Feet",
+			"Play"
+		]
+	},
+	{
+		"word": "Sticky Note",
+		"forbidden": [
+			"Reminder",
+			"Paper",
+			"Adhesive",
+			"Yellow",
+			"Write"
+		]
+	},
+	{
+		"word": "Wristband",
+		"forbidden": [
+			"Arm",
+			"Band",
+			"Rubber",
+			"Wear",
+			"Hand"
+		]
+	},
+	{
+		"word": "Chessboard",
+		"forbidden": [
+			"Game",
+			"Black",
+			"White",
+			"King",
+			"Checkmate"
+		]
+	},
+	{
+		"word": "Monopoly",
+		"forbidden": [
+			"Board",
+			"Game",
+			"Money",
+			"Property",
+			"Dice"
+		]
+	},
+	{
+		"word": "Jenga",
+		"forbidden": [
+			"Blocks",
+			"Tower",
+			"Fall",
+			"Stack",
+			"Wood"
+		]
+	},
+	{
+		"word": "Slingshot",
+		"forbidden": [
+			"Stretch",
+			"Shoot",
+			"Rubber",
+			"Aim",
+			"Stone"
+		]
+	},
+	{
+		"word": "Yo-Yo",
+		"forbidden": [
+			"String",
+			"Spin",
+			"Up",
+			"Down",
+			"Toy"
+		]
+	},
+	{
+		"word": "Boomerang",
+		"forbidden": [
+			"Throw",
+			"Return",
+			"Curve",
+			"Aussie",
+			"Air"
+		]
+	},
+	{
+		"word": "Magnet",
+		"forbidden": [
+			"Metal",
+			"Attract",
+			"Poles",
+			"Stick",
+			"Fridge"
+		]
+	},
+	{
+		"word": "Earbuds",
+		"forbidden": [
+			"Music",
+			"Listen",
+			"Wireless",
+			"Sound",
+			"Bluetooth"
+		]
+	},
+	{
+		"word": "Ink Bottle",
+		"forbidden": [
+			"Pen",
+			"Liquid",
+			"Refill",
+			"Black",
+			"Write"
+		]
+	},
+	{
+		"word": "Paintbrush",
+		"forbidden": [
+			"Paint",
+			"Art",
+			"Stroke",
+			"Canvas",
+			"Bristles"
+		]
+	},
+	{
+		"word": "Highlighter",
+		"forbidden": [
+			"Marker",
+			"Yellow",
+			"Text",
+			"Glow",
+			"Note"
+		]
+	},
+	{
+		"word": "Mousepad",
+		"forbidden": [
+			"Computer",
+			"Desk",
+			"Mouse",
+			"Move",
+			"Scroll"
+		]
+	},
+	{
+		"word": "Webcam",
+		"forbidden": [
+			"Camera",
+			"Online",
+			"Video",
+			"Meeting",
+			"Laptop"
+		]
+	},
+	{
+		"word": "Webcam Cover",
+		"forbidden": [
+			"Privacy",
+			"Slide",
+			"Laptop",
+			"Block",
+			"Lens"
+		]
+	},
+	{
+		"word": "Joystick",
+		"forbidden": [
+			"Game",
+			"Controller",
+			"Move",
+			"Video",
+			"Arcade"
+		]
+	},
+	{
+		"word": "Tripod",
+		"forbidden": [
+			"Camera",
+			"Legs",
+			"Stand",
+			"Stable",
+			"Photo"
+		]
+	},
+	{
+		"word": "Selfie Stick",
+		"forbidden": [
+			"Photo",
+			"Extend",
+			"Phone",
+			"Group",
+			"Travel"
+		]
+	},
+	{
+		"word": "Dashboard",
+		"forbidden": [
+			"Car",
+			"Speedometer",
+			"Driver",
+			"Front",
+			"Controls"
+		]
+	},
+	{
+		"word": "QR Code",
+		"forbidden": [
+			"Scan",
+			"Phone",
+			"Square",
+			"Black",
+			"Digital"
 		]
 	}
 ]

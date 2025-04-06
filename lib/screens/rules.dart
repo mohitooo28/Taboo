@@ -19,17 +19,17 @@ class RulesPage extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFF47215E), 
-              Color(0xFF73378D), 
-              Color(0xFF452DA5), 
-              Color(0xFF311D58), 
+              Color(0xFF47215E), // Top Left
+              Color(0xFF73378D), // Top Right
+              Color(0xFF452DA5), // Bottom Left
+              Color(0xFF311D58), // Bottom Right
             ],
             stops: [
               0.0,
               0.33,
               0.66,
               1.0
-            ], 
+            ], // Adjusting stops for smooth blending
           ),
         ),
         child: Column(
@@ -79,7 +79,7 @@ class RulesPage extends StatelessWidget {
                       "Go to Home",
                       style: GoogleFonts.nunito(
                         color: Colors.purple,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w900,
                         fontSize: 20,
                       ),
                     ),

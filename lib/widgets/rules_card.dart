@@ -24,8 +24,8 @@ class RulesCard extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color(0xFF64A7E4), // Top color
-                Color(0xFF876DD6), // Bottom color
+                Color(0xFF64A7E4),
+                Color(0xFF876DD6),
               ],
             ),
           ),

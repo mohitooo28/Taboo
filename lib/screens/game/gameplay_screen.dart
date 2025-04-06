@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taboo/controllers/game_controller.dart';
 import 'package:taboo/models/taboo_card.dart';
@@ -252,13 +251,9 @@ class _GameplayScreenState extends State<GameplayScreen>
                     ),
                   )),
 
-              // Spacer for alignment
-              const SizedBox(height: 15),
-
               // Timer
+              const SizedBox(height: 15),
               _buildImprovedTimer(),
-
-              // Spacer
               const SizedBox(height: 25),
 
               // Taboo Card
@@ -272,8 +267,6 @@ class _GameplayScreenState extends State<GameplayScreen>
                       : _buildAnimatedTabooCard(_currentCard),
                 ),
               ),
-
-              // Spacer
               const SizedBox(height: 20),
 
               // Action Buttons
@@ -295,14 +288,7 @@ class _GameplayScreenState extends State<GameplayScreen>
                         )),
 
                     // Taboo button
-                    _buildImprovedActionButton(
-                      onTap: _handleTaboo,
-                      color: Colors.red,
-                      icon: "assets/images/taboo.svg",
-                      label: "",
-                      enabled: true,
-                      buttonType: "taboo",
-                    ),
+                    _buildTabooImageButton(),
 
                     // Correct button
                     _buildImprovedActionButton(
@@ -338,7 +324,6 @@ class _GameplayScreenState extends State<GameplayScreen>
           child: Stack(
             alignment: Alignment.center,
             children: [
-              // Background static circle
               Container(
                 width: 90,
                 height: 90,
@@ -561,6 +546,32 @@ class _GameplayScreenState extends State<GameplayScreen>
     );
   }
 
+  Widget _buildTabooImageButton() {
+    return GestureDetector(
+      onTap: _handleTaboo,
+      child: Container(
+        width: 130,
+        height: 130,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.white.withOpacity(0.1),
+              blurRadius: 10,
+              spreadRadius: 1,
+            )
+          ],
+        ),
+        child: ClipOval(
+          child: Image.asset(
+            'assets/images/taboo.png',
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+    );
+  }
+
   Widget _buildImprovedActionButton({
     required Function() onTap,
     required Color color,
@@ -569,8 +580,8 @@ class _GameplayScreenState extends State<GameplayScreen>
     required bool enabled,
     required String buttonType,
   }) {
-    final double buttonSize = buttonType == "taboo" ? 120 : 85;
-    final double iconPadding = buttonType == "taboo" ? 30 : 20;
+    final double buttonSize = 85;
+    final double iconPadding = 20;
 
     return GestureDetector(
       onTap: enabled ? onTap : null,
@@ -584,7 +595,7 @@ class _GameplayScreenState extends State<GameplayScreen>
               width: buttonSize,
               height: buttonSize,
               decoration: BoxDecoration(
-                color: buttonType == "taboo" ? color : Colors.white,
+                color: Colors.white,
                 shape: BoxShape.circle,
                 boxShadow: enabled
                     ? [
@@ -595,9 +606,6 @@ class _GameplayScreenState extends State<GameplayScreen>
                         )
                       ]
                     : null,
-                border: buttonType != "taboo"
-                    ? null
-                    : Border.all(color: Colors.white, width: 3),
               ),
               child: Center(
                 child: Padding(
@@ -648,7 +656,6 @@ class _GameplayScreenState extends State<GameplayScreen>
   }
 }
 
-// Custom painter for timer circle animation
 class TimerPainter extends CustomPainter {
   TimerPainter({
     required this.animation,

@@ -12,7 +12,7 @@ class GameController extends GetxController {
 
   // Game state
   final currentTeam = "".obs;
-  final displayRound = 1.obs; // What round number to display to users
+  final displayRound = 1.obs;
   final redTeamScore = 0.obs;
   final blueTeamScore = 0.obs;
   final isRedTeamTurn = true.obs;

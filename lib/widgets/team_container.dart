@@ -12,14 +12,14 @@ class TeamContainer extends StatelessWidget {
   final List<Color> gradientColors;
 
   const TeamContainer({
-    Key? key,
+    super.key,
     required this.isEditing,
     required this.teamName,
     required this.teamController,
     required this.teamFocusNode,
     required this.onEditPressed,
     required this.gradientColors,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,6 @@ class TeamContainer extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          // Centered text layer
           Align(
             alignment: Alignment.center,
             child: isEditing
@@ -75,7 +74,6 @@ class TeamContainer extends StatelessWidget {
                   ),
           ),
 
-          // Edit icon layer (left-aligned)
           Align(
             alignment: Alignment.centerLeft,
             child: IconButton(
@@ -89,7 +87,6 @@ class TeamContainer extends StatelessWidget {
             ),
           ),
 
-          // Check icon layer (right-aligned, only visible when editing)
           if (isEditing)
             Align(
               alignment: Alignment.centerRight,

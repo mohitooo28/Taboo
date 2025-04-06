@@ -15,7 +15,6 @@ class PresetPanicHome extends StatefulWidget {
 }
 
 class _PresetPanicHomeState extends State<PresetPanicHome> {
-  // Data it has redTeamName, blueTeamName, playTime, round, numberofPasses
 
   // Team name variables
   String redTeamName = "Red Team";
@@ -112,7 +111,6 @@ class _PresetPanicHomeState extends State<PresetPanicHome> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Dismiss keyboard when tapping outside text fields
         FocusScope.of(context).unfocus();
       },
       child: Scaffold(
@@ -136,13 +134,12 @@ class _PresetPanicHomeState extends State<PresetPanicHome> {
           child: SafeArea(
             child: Stack(
               children: [
-                // Scrollable content
                 SingleChildScrollView(
                   padding: const EdgeInsets.only(
                     left: 20,
                     right: 20,
                     top: 20,
-                    bottom: 100, // Space for the fixed button
+                    bottom: 100,
                   ),
                   child: Column(
                     children: [

@@ -9,7 +9,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vibration/vibration.dart';
 
 class GetReadyScreen extends StatefulWidget {
-  const GetReadyScreen({Key? key}) : super(key: key);
+  const GetReadyScreen({super.key});
 
   @override
   State<GetReadyScreen> createState() => _GetReadyScreenState();
@@ -86,7 +86,7 @@ class _GetReadyScreenState extends State<GetReadyScreen>
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SvgPicture.asset(
-                      'assets/images/megaphone.svg',
+                      'assets/vectors/megaphone.svg',
                       width: 24,
                       height: 24,
                       color: Colors.white,
@@ -111,7 +111,7 @@ class _GetReadyScreenState extends State<GetReadyScreen>
 
         // Team SVG
         SvgPicture.asset(
-          'assets/images/team.svg',
+          'assets/vectors/team.svg',
           width: 110,
           height: 110,
           colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
@@ -157,7 +157,7 @@ class _GetReadyScreenState extends State<GetReadyScreen>
                 ),
               ),
               child: FadeInRight(
-                from: 100, // Start from further right (outside the screen)
+                from: 100, 
                 duration: const Duration(milliseconds: 800),
                 child: Obx(() => _buildTeamSection(true, "Red Team")),
               ),
@@ -177,7 +177,7 @@ class _GetReadyScreenState extends State<GetReadyScreen>
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
-              ), // Blue team background
+              ), 
               child: FadeInLeft(
                 from: 100, // Start from further left (outside the screen)
                 duration: const Duration(milliseconds: 800),

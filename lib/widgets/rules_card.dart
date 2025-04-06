@@ -31,18 +31,17 @@ class RulesCard extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              // Animated SVG from right with animate_do
               Positioned(
                 right: -5,
                 bottom: -35,
                 child: SlideInRight(
                   duration: Duration(milliseconds: 800),
-                  from: 100, // Distance to animate (pixels)
+                  from: 100,
                   child: ClipRect(
                     child: Opacity(
                       opacity: 0.3,
                       child: SvgPicture.asset(
-                        'assets/icons/gaming.svg',
+                        'assets/vectors/gaming.svg',
                         width: 180,
                         height: 180,
                         fit: BoxFit.cover,
@@ -56,9 +55,9 @@ class RulesCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20.0), // Adds padding for the text
+                padding: const EdgeInsets.all(20.0),
                 child: Align(
-                  alignment: Alignment.topLeft, // Align text to the top-left
+                  alignment: Alignment.topLeft,
                   child: Text("RULES",
                       style: GoogleFonts.aclonica(
                           color: Colors.white,

@@ -9,12 +9,12 @@ class CompactGameSettings extends StatelessWidget {
   final Function() onEditPressed;
 
   const CompactGameSettings({
-    Key? key,
+    super.key,
     required this.playTime,
     required this.rounds,
     required this.passes,
     required this.onEditPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -96,19 +96,17 @@ class SettingTile extends StatelessWidget {
   final bool isPass;
 
   const SettingTile({
-    Key? key,
+    super.key,
     required this.icon,
     required this.title,
     required this.value,
     this.isPass = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        // width:,
-        // height: 90,
         decoration: BoxDecoration(
           color: const Color(0xFF4B4093),
           borderRadius: BorderRadius.circular(15),
@@ -135,7 +133,7 @@ class SettingTile extends StatelessWidget {
             const SizedBox(height: 10),
             (isPass && value == '9')
                 ? Icon(
-                    Icons.all_inclusive, // Change to any arrow icon you prefer
+                    Icons.all_inclusive,
                     color: Colors.white,
                     size: 24,
                   )

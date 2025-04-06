@@ -9,7 +9,7 @@ import 'package:taboo/screens/home_screen.dart';
 import 'package:vibration/vibration.dart';
 
 class GameOverScreen extends StatelessWidget {
-  const GameOverScreen({Key? key}) : super(key: key);
+  const GameOverScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,6 @@ class GameOverScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Background
           Container(
             width: double.infinity,
             height: double.infinity,
@@ -92,7 +91,7 @@ class GameOverScreen extends StatelessWidget {
                             child: Transform.rotate(
                               angle: -0.35,
                               child: SvgPicture.asset(
-                                'assets/images/trophy.svg',
+                                'assets/vectors/trophy.svg',
                                 width: MediaQuery.of(context).size.width * 0.6,
                                 color: Colors.white,
                               ),
@@ -114,10 +113,10 @@ class GameOverScreen extends StatelessWidget {
                                   shadows: [
                                     Shadow(
                                       offset: Offset(2,
-                                          2), // slight offset for smooth depth
-                                      blurRadius: 4.0, // smooth blur
+                                          2), 
+                                      blurRadius: 4.0,
                                       color: Colors.black
-                                          .withOpacity(0.3), // soft dark shadow
+                                          .withOpacity(0.3), 
                                     ),
                                   ],
                                 ),
@@ -136,10 +135,10 @@ class GameOverScreen extends StatelessWidget {
                                     shadows: [
                                       Shadow(
                                         offset: Offset(2,
-                                            2), // slight offset for smooth depth
+                                            2),
                                         blurRadius: 4.0, // smooth blur
                                         color: Colors.black.withOpacity(
-                                            0.3), // soft dark shadow
+                                            0.3), 
                                       ),
                                     ],
                                   ),
@@ -165,10 +164,10 @@ class GameOverScreen extends StatelessWidget {
                                         shadows: [
                                           Shadow(
                                             offset: Offset(2,
-                                                2), // slight offset for smooth depth
+                                                2), 
                                             blurRadius: 4.0, // smooth blur
                                             color: Colors.black.withOpacity(
-                                                0.3), // soft dark shadow
+                                                0.3), 
                                           ),
                                         ],
                                       ),
@@ -235,9 +234,7 @@ class GameOverScreen extends StatelessWidget {
                   child: GestureDetector(
                     onTap: () {
                       Vibration.vibrate(duration: 100);
-                      // Reset game controller
                       gameController.resetGame();
-                      // Navigate back to home
                       Get.off(() => HomeScreen());
                     },
                     child: Container(
@@ -311,7 +308,7 @@ class GameOverScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                       child: SvgPicture.asset(
-                        'assets/images/team.svg',
+                        'assets/vectors/team.svg',
                         width: 70,
                         height: 70,
                         color: Colors.white,

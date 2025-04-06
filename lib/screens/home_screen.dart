@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    // Small delay to ensure the animation starts after the first frame
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _controller.forward();
     });
@@ -34,23 +33,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        height: double.infinity, // Ensures full-screen coverage
+        height: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFF47215E), // Top Left
-              Color(0xFF73378D), // Top Right
-              Color(0xFF452DA5), // Bottom Left
-              Color(0xFF311D58), // Bottom Right
+              Color(0xFF47215E),
+              Color(0xFF73378D),
+              Color(0xFF452DA5),
+              Color(0xFF311D58),
             ],
-            stops: [
-              0.0,
-              0.33,
-              0.66,
-              1.0
-            ], // Adjusting stops for smooth blending
+            stops: [0.0, 0.33, 0.66, 1.0],
           ),
         ),
         child: SafeArea(
@@ -63,10 +57,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: GestureDetector(
                   onTap: () {
                     Vibration.vibrate(duration: 50);
-                    _controller.forward(from: 0); // Restart animation on tap
+                    _controller.forward(from: 0);
                   },
                   child: BounceIn(
-                    manualTrigger: true, // Ensures manual animation control
+                    manualTrigger: true,
                     controller: (controller) => _controller = controller,
                     duration: Duration(milliseconds: 1000),
                     child: Stack(
@@ -74,9 +68,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         // Shadow layer for the SVG
                         Transform.translate(
-                          offset: Offset(4, 5), // Slight shadow offset
+                          offset: Offset(4, 5),
                           child: SvgPicture.asset(
-                            "assets/images/title.svg",
+                            "assets/vectors/title.svg",
                             width: 300,
                             color: Colors.black
                                 .withOpacity(0.2), // Shadow color with opacity
@@ -84,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         // Original SVG on top
                         SvgPicture.asset(
-                          "assets/images/title.svg",
+                          "assets/vectors/title.svg",
                           width: 300,
                         ),
                       ],
@@ -101,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     GameTypeCard(
                       title: "PRE-SET\nPANIC",
-                      assetName: 'assets/icons/puzzle.svg',
+                      assetName: 'assets/vectors/puzzle.svg',
                       subtitle: "Classic words, no hassle just pure fun!",
                       animateFromLeft: true,
                       destination: PresetPanicHome(),
@@ -109,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(width: 16), // Space between containers
                     GameTypeCard(
                       title: "CUSTOM\nCRAZE",
-                      assetName: 'assets/icons/fire.svg',
+                      assetName: 'assets/vectors/fire.svg',
                       subtitle: "Your words, your rules :D",
                       animateFromLeft: false,
                       destination: CustomCrazeHome(),
@@ -126,15 +120,27 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: RulesCard()),
               const Spacer(),
               Padding(
-                padding: EdgeInsets.only(left: 16, bottom: 20),
-                child: Text(
-                  "The Chaos\nAwaits",
-                  style: GoogleFonts.doHyeon(
-                    color: Colors.grey.withOpacity(0.3),
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 2.3,
-                    fontSize: 45,
-                  ),
+                padding: EdgeInsets.fromLTRB(16, 5, 16, 20),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(
+                      "The Chaos\nAwaits",
+                      style: GoogleFonts.doHyeon(
+                        color: Colors.white.withOpacity(0.2),
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 2.3,
+                        fontSize: 45,
+                      ),
+                    ),
+                    Spacer(),
+                    SvgPicture.asset(
+                      "assets/vectors/about.svg",
+                      width: 35,
+                      height: 35,
+                      color: Colors.white.withOpacity(0.1),
+                    )
+                  ],
                 ),
               ),
             ],

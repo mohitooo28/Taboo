@@ -12,7 +12,7 @@ class GameSettingsWidget extends StatelessWidget {
   final ValueChanged<double> onPassesChanged;
 
   const GameSettingsWidget({
-    Key? key,
+    super.key,
     required this.playTime,
     required this.round,
     required this.numberOfPasses,
@@ -20,7 +20,7 @@ class GameSettingsWidget extends StatelessWidget {
     required this.onPlayTimeChanged,
     required this.onRoundChanged,
     required this.onPassesChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -109,7 +109,7 @@ class SettingSlider extends StatelessWidget {
   final ValueChanged<double> onChanged;
 
   const SettingSlider({
-    Key? key,
+    super.key,
     required this.icon,
     required this.title,
     required this.value,
@@ -118,7 +118,7 @@ class SettingSlider extends StatelessWidget {
     required this.max,
     required this.divisions,
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

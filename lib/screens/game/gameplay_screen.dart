@@ -11,7 +11,7 @@ import 'package:vibration/vibration.dart';
 import 'dart:math' as math;
 
 class GameplayScreen extends StatefulWidget {
-  const GameplayScreen({Key? key}) : super(key: key);
+  const GameplayScreen({super.key});
 
   @override
   State<GameplayScreen> createState() => _GameplayScreenState();
@@ -279,7 +279,7 @@ class _GameplayScreenState extends State<GameplayScreen>
                     Obx(() => _buildImprovedActionButton(
                           onTap: _handleSkip,
                           color: Colors.amber,
-                          icon: "assets/images/skip.svg",
+                          icon: "assets/vectors/skip.svg",
                           label: gameController.numberOfPasses.value == 9
                               ? "∞"
                               : "${gameController.remainingPasses.value}",
@@ -294,7 +294,7 @@ class _GameplayScreenState extends State<GameplayScreen>
                     _buildImprovedActionButton(
                       onTap: _handleCorrect,
                       color: Colors.green,
-                      icon: "assets/images/tick.svg",
+                      icon: "assets/vectors/tick.svg",
                       label: "",
                       enabled: true,
                       buttonType: "correct",
@@ -527,10 +527,10 @@ class _GameplayScreenState extends State<GameplayScreen>
                   },
                   child: SvgPicture.asset(
                     _stampType == 'correct'
-                        ? 'assets/images/tick.svg'
+                        ? 'assets/vectors/tick.svg'
                         : _stampType == 'taboo'
-                            ? 'assets/images/stamp.svg'
-                            : 'assets/images/skip.svg',
+                            ? 'assets/vectors/stamp.svg'
+                            : 'assets/vectors/skip.svg',
                     width: _stampType == 'taboo' ? 270 : 80,
                     color: _stampType == 'correct'
                         ? Colors.green

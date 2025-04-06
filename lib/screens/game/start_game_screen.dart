@@ -6,7 +6,7 @@ import 'package:taboo/screens/game/gameplay_screen.dart';
 import 'package:vibration/vibration.dart';
 
 class StartGameScreen extends StatelessWidget {
-  const StartGameScreen({Key? key}) : super(key: key);
+  const StartGameScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,6 @@ class StartGameScreen extends StatelessWidget {
 
     return Scaffold(
       body: Obx(() {
-        // Determine team color based on current team
         final isRedTeam = gameController.isRedTeamTurn.value;
         final teamColor =
             isRedTeam ? const Color(0xFFBF393C) : const Color(0xFF3498DB);
@@ -74,7 +73,6 @@ class StartGameScreen extends StatelessWidget {
                   child: GestureDetector(
                     onTap: () {
                       Vibration.vibrate(duration: 100);
-                      // Navigate to gameplay screen
                       Get.off(() => const GameplayScreen());
                     },
                     child: Container(

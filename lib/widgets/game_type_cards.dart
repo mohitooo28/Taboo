@@ -50,7 +50,6 @@ class GameTypeCard extends StatelessWidget {
             ),
             child: Stack(
               children: [
-                // Animated SVG with animate_do
                 Positioned(
                   left: animateFromLeft ? -25 : null,
                   right: animateFromLeft ? null : -25,
@@ -58,12 +57,12 @@ class GameTypeCard extends StatelessWidget {
                   child: animateFromLeft
                       ? SlideInLeft(
                           duration: Duration(milliseconds: 800),
-                          from: 100, // Distance to animate (pixels)
+                          from: 100, 
                           child: _buildSvgImage(),
                         )
                       : SlideInRight(
                           duration: Duration(milliseconds: 800),
-                          from: 100, // Distance to animate (pixels)
+                          from: 100, 
                           child: _buildSvgImage(),
                         ),
                 ),

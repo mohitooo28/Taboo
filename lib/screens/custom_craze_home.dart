@@ -50,7 +50,6 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
       try {
         json.decode(value);
         customDataErrorText = null;
-        // If validation passes, you can process the JSON here
         print("JSON validation passed: $value");
       } catch (e) {
         customDataErrorText = "Invalid JSON format";
@@ -144,7 +143,6 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Dismiss keyboard when tapping outside text fields
         FocusScope.of(context).unfocus();
       },
       child: Scaffold(
@@ -168,13 +166,12 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
           child: SafeArea(
             child: Stack(
               children: [
-                // Scrollable content
                 SingleChildScrollView(
                   padding: const EdgeInsets.only(
                     left: 20,
                     right: 20,
                     top: 20,
-                    bottom: 100, // Space for the fixed button
+                    bottom: 100, 
                   ),
                   child: Column(
                     children: [
@@ -231,7 +228,6 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
 
                       const SizedBox(height: 20),
 
-                      // !---------------------------------------------------------------
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
@@ -326,13 +322,10 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      // !---------------------------------------------------------------
                     ],
                   ),
                 ),
 
-                // Fixed Ready Button at bottom
-                // Replace the nested GestureDetectors with a single one:
                 Positioned(
                   left: 20,
                   right: 20,
@@ -342,24 +335,7 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                       Vibration.vibrate(duration: 100);
                       FocusScope.of(context).unfocus();
 
-                      // Validate the JSON when Ready button is pressed
                       validateCustomJson();
-
-                      print(
-                          "---------------------------------------------------");
-                      print("Red Team Name: $redTeamName");
-                      print("Blue Team Name: $blueTeamName");
-                      print("Play Time: $playTime");
-                      print("Round: $round");
-                      print("Passes: $numberOfPasses");
-
-                      // If you want to print the custom data as well:
-                      if (customDataErrorText == null &&
-                          customDataController.text.isNotEmpty) {
-                        print("Custom Data: ${customDataController.text}");
-                      }
-                      print(
-                          "---------------------------------------------------");
                     },
                     child: Container(
                       height: 60,

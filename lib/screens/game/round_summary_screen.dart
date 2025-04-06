@@ -7,7 +7,7 @@ import 'package:taboo/screens/game/start_game_screen.dart';
 import 'package:vibration/vibration.dart';
 
 class RoundSummaryScreen extends StatelessWidget {
-  const RoundSummaryScreen({Key? key}) : super(key: key);
+  const RoundSummaryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -133,18 +133,13 @@ class RoundSummaryScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Continue button
-// Ready button at bottom
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: GestureDetector(
                   onTap: () {
                     Vibration.vibrate(duration: 100);
-
-                    // Switch teams
                     gameController.switchTeam();
 
-                    // Check if game is over
                     if (gameController.isGameOver) {
                       Get.off(() => const GameOverScreen());
                     } else {

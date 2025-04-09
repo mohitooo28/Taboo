@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:taboo/screens/in_development.dart';
-import 'package:taboo/widgets/compact_game_settings.dart';
+import 'package:taboo/widgets/custom_instructions_dialog.dart';
+import 'package:taboo/widgets/game_settings.dart';
 import 'package:taboo/widgets/team_container.dart';
 import 'package:vibration/vibration.dart';
 
@@ -22,7 +23,7 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
 
   // Game settings variables
   int playTime = 60; // in seconds
-  int round = 2;
+  int rounds = 2;
   int numberOfPasses = 3;
 
   // Editing state variables
@@ -68,6 +69,31 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
         customDataController.text = clipboardData.text!;
       });
     }
+  }
+
+  void _showInstructionsDialog() {
+    showGeneralDialog(
+      context: context,
+      barrierDismissible: true,
+      barrierLabel: "Instructions Barrier",
+      barrierColor: Colors.black.withOpacity(0.5),
+      transitionDuration: const Duration(milliseconds: 300),
+      pageBuilder: (_, __, ___) => const CustomInstructionsDialog(),
+      transitionBuilder: (context, animation, secondaryAnimation, child) {
+        final curvedAnimation = CurvedAnimation(
+          parent: animation,
+          curve: Curves.easeInOut,
+        );
+
+        return FadeTransition(
+          opacity: curvedAnimation,
+          child: ScaleTransition(
+            scale: curvedAnimation,
+            child: child,
+          ),
+        );
+      },
+    );
   }
 
   @override
@@ -254,12 +280,15 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                                 ),
                               ),
                               const SizedBox(height: 1),
-                              Text(
-                                "How to create & enter custom data",
-                                style: GoogleFonts.nunito(
-                                  color: Colors.blue,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
+                              GestureDetector(
+                                onTap: _showInstructionsDialog,
+                                child: Text(
+                                  "How to create & enter custom data",
+                                  style: GoogleFonts.nunito(
+                                    color: Colors.blue,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
                               const SizedBox(height: 20),
@@ -329,11 +358,29 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                       ),
                       const SizedBox(height: 20),
                       // Game Settings Container
-                      CompactGameSettings(
+                      GameSettingsWidget(
                         playTime: playTime,
-                        rounds: round,
-                        passes: numberOfPasses,
-                        onEditPressed: () {},
+                        round: rounds,
+                        numberOfPasses: numberOfPasses,
+                        getPassesDisplay: getPassesDisplay,
+                        onPlayTimeChanged: (value) {
+                          Vibration.vibrate(duration: 10);
+                          setState(() {
+                            playTime = value.round();
+                          });
+                        },
+                        onRoundChanged: (value) {
+                          Vibration.vibrate(duration: 10);
+                          setState(() {
+                            rounds = value.round();
+                          });
+                        },
+                        onPassesChanged: (value) {
+                          Vibration.vibrate(duration: 10);
+                          setState(() {
+                            numberOfPasses = value.round();
+                          });
+                        },
                       ),
 
                       const SizedBox(height: 40),

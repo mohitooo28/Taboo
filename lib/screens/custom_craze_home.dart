@@ -1,7 +1,9 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:taboo/screens/in_development.dart';
 import 'package:taboo/widgets/compact_game_settings.dart';
 import 'package:taboo/widgets/team_container.dart';
 import 'package:vibration/vibration.dart';
@@ -75,6 +77,20 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
     blueTeamController = TextEditingController(text: blueTeamName);
     redTeamFocusNode = FocusNode();
     blueTeamFocusNode = FocusNode();
+
+    //! Set up timer to navigate after 3 seconds
+    // Timer(const Duration(seconds: 2), () {
+    //   navigateToInDevelopment();
+    // });
+  }
+
+  //! Function to navigate to InDevelopment page
+  void navigateToInDevelopment() {
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (context) => InDevelopment(),
+      ),
+    );
   }
 
   @override
@@ -171,14 +187,14 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                     left: 20,
                     right: 20,
                     top: 20,
-                    bottom: 100, 
+                    bottom: 100,
                   ),
                   child: Column(
                     children: [
                       const SizedBox(height: 20),
                       Text(
                         "CUSTOM CRAZE",
-                        style: GoogleFonts.doHyeon(
+                        style: GoogleFonts.aclonica(
                           color: Colors.white,
                           fontSize: 33,
                           fontWeight: FontWeight.w500,
@@ -217,16 +233,6 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                       ),
 
                       const SizedBox(height: 40),
-
-                      // Game Settings Container
-                      CompactGameSettings(
-                        playTime: playTime,
-                        rounds: round,
-                        passes: numberOfPasses,
-                        onEditPressed: () {},
-                      ),
-
-                      const SizedBox(height: 20),
 
                       Container(
                         width: double.infinity,
@@ -322,10 +328,18 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                         ),
                       ),
                       const SizedBox(height: 20),
+                      // Game Settings Container
+                      CompactGameSettings(
+                        playTime: playTime,
+                        rounds: round,
+                        passes: numberOfPasses,
+                        onEditPressed: () {},
+                      ),
+
+                      const SizedBox(height: 40),
                     ],
                   ),
                 ),
-
                 Positioned(
                   left: 20,
                   right: 20,

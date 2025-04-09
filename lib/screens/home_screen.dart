@@ -6,6 +6,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:taboo/screens/custom_craze_home.dart';
 import 'package:taboo/screens/preset_panic_home.dart';
 import 'package:taboo/screens/rules.dart';
+import 'package:taboo/widgets/about_dialog.dart';
 import 'package:taboo/widgets/game_type_cards.dart';
 import 'package:taboo/widgets/rules_card.dart';
 import 'package:vibration/vibration.dart';
@@ -134,11 +135,50 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     Spacer(),
-                    SvgPicture.asset(
-                      "assets/vectors/about.svg",
-                      width: 35,
-                      height: 35,
-                      color: Colors.white.withOpacity(0.1),
+
+                    GestureDetector(
+                      onTap: () {
+                        Vibration.vibrate(duration: 50);
+
+                        Get.generalDialog(
+                          pageBuilder:
+                              (context, animation, secondaryAnimation) =>
+                                  const AboutDialogBox(),
+                          barrierDismissible: true,
+                          barrierLabel: "About",
+                          barrierColor: Colors.black.withOpacity(0.5),
+                          transitionDuration: const Duration(milliseconds: 400),
+                          transitionBuilder:
+                              (context, animation, secondaryAnimation, child) {
+                            final curvedAnimation = CurvedAnimation(
+                              parent: animation,
+                              curve: Curves.easeOutQuint,
+                            );
+
+                            return Transform.translate(
+                              offset: Offset(
+                                (1 - curvedAnimation.value) *
+                                    100, // Horizontal movement
+                                (1 - curvedAnimation.value) *
+                                    100, // Vertical movement
+                              ),
+                              child: Transform.scale(
+                                scale: curvedAnimation.value,
+                                child: Opacity(
+                                  opacity: curvedAnimation.value,
+                                  child: child,
+                                ),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: SvgPicture.asset(
+                        "assets/vectors/about.svg",
+                        width: 35,
+                        height: 35,
+                        color: Colors.white.withOpacity(0.1),
+                      ),
                     )
                   ],
                 ),

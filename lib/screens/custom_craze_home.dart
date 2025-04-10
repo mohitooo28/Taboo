@@ -2,8 +2,13 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:taboo/screens/in_development.dart';
+import 'package:taboo/controllers/game_controller.dart';
+import 'package:taboo/screens/game/get_ready_screen.dart';
+import 'package:taboo/services/custom_taboo_service.dart';
+import 'package:taboo/services/taboo_service.dart';
+import 'package:taboo/widgets/compact_game_settings.dart';
 import 'package:taboo/widgets/custom_instructions_dialog.dart';
 import 'package:taboo/widgets/game_settings.dart';
 import 'package:taboo/widgets/team_container.dart';
@@ -51,11 +56,81 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
       }
 
       try {
-        json.decode(value);
+        // First check if it's valid JSON
+        final jsonData = json.decode(value);
+
+        // Now validate the structure
+        if (jsonData is! List) {
+          customDataErrorText = "JSON must be an array of word objects";
+          return;
+        }
+
+        if (jsonData.isEmpty) {
+          customDataErrorText = "Word list cannot be empty";
+          return;
+        }
+
+        // Check each word object
+        for (int i = 0; i < jsonData.length; i++) {
+          final wordObj = jsonData[i];
+
+          // Check if it's a valid object
+          if (wordObj is! Map<String, dynamic>) {
+            customDataErrorText = "Item #${i + 1} is not a valid word object";
+            return;
+          }
+
+          // Check if it has the required fields
+          if (!wordObj.containsKey('word') ||
+              wordObj['word'] is! String ||
+              (wordObj['word'] as String).isEmpty) {
+            customDataErrorText =
+                "Item #${i + 1} is missing a valid 'word' field";
+            return;
+          }
+
+          if (!wordObj.containsKey('forbidden') ||
+              wordObj['forbidden'] is! List) {
+            customDataErrorText = "Item #${i + 1} is missing 'forbidden' list";
+            return;
+          }
+
+          // Check forbidden words
+          final forbiddenWords = wordObj['forbidden'] as List;
+          if (forbiddenWords.isEmpty) {
+            customDataErrorText =
+                "Item #${i + 1} must have at least one forbidden word";
+            return;
+          }
+
+          for (int j = 0; j < forbiddenWords.length; j++) {
+            if (forbiddenWords[j] is! String ||
+                (forbiddenWords[j] as String).isEmpty) {
+              customDataErrorText =
+                  "Item #${i + 1} contains an invalid forbidden word";
+              return;
+            }
+          }
+        }
+
+        // If we made it here, the JSON is valid
         customDataErrorText = null;
-        print("JSON validation passed: $value");
+        print("JSON validation passed: ${jsonData.length} word objects found");
+
+        // Optional: Show a success message
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Successfully loaded ${jsonData.length} custom words',
+              style: GoogleFonts.nunito(color: Colors.white, fontSize: 15),
+            ),
+            backgroundColor: Colors.green,
+            duration: Duration(seconds: 2),
+          ),
+        );
       } catch (e) {
-        customDataErrorText = "Invalid JSON format";
+        customDataErrorText =
+            "Invalid JSON format: ${e.toString().split('\n')[0]}";
       }
     });
   }
@@ -96,6 +171,80 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
     );
   }
 
+  // Format passes display
+  String getPassesDisplay(int passes) {
+    return passes == 9 ? "Unlimited" : passes.toString();
+  }
+
+  void _showGameSettingsDialog() {
+    int tempPlayTime = playTime;
+    int tempRounds = rounds;
+    int tempPasses = numberOfPasses;
+
+    showDialog(
+      context: context,
+      barrierDismissible: true,
+      barrierColor: Colors.black.withOpacity(0.7),
+      builder: (BuildContext context) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return FadeTransition(
+              opacity: Tween<double>(begin: 0.0, end: 1.0).animate(
+                CurvedAnimation(
+                  parent: ModalRoute.of(context)!.animation!,
+                  curve: Curves.easeIn,
+                ),
+              ),
+              child: Dialog(
+                backgroundColor: Colors.transparent,
+                insetPadding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+                child: SingleChildScrollView(
+                  child: GameSettingsWidget(
+                    playTime: tempPlayTime,
+                    round: tempRounds,
+                    numberOfPasses: tempPasses,
+                    getPassesDisplay: getPassesDisplay,
+                    onPlayTimeChanged: (value) {
+                      Vibration.vibrate(duration: 10);
+                      setDialogState(() {
+                        tempPlayTime = value.round();
+                      });
+
+                      setState(() {
+                        playTime = value.round();
+                      });
+                    },
+                    onRoundChanged: (value) {
+                      Vibration.vibrate(duration: 10);
+                      setDialogState(() {
+                        tempRounds = value.round();
+                      });
+
+                      setState(() {
+                        rounds = value.round();
+                      });
+                    },
+                    onPassesChanged: (value) {
+                      Vibration.vibrate(duration: 10);
+                      setDialogState(() {
+                        tempPasses = value.round();
+                      });
+
+                      setState(() {
+                        numberOfPasses = value.round();
+                      });
+                    },
+                  ),
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
   @override
   void initState() {
     super.initState();
@@ -103,20 +252,6 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
     blueTeamController = TextEditingController(text: blueTeamName);
     redTeamFocusNode = FocusNode();
     blueTeamFocusNode = FocusNode();
-
-    //! Set up timer to navigate after 3 seconds
-    // Timer(const Duration(seconds: 2), () {
-    //   navigateToInDevelopment();
-    // });
-  }
-
-  //! Function to navigate to InDevelopment page
-  void navigateToInDevelopment() {
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (context) => InDevelopment(),
-      ),
-    );
   }
 
   @override
@@ -174,11 +309,6 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
       isEditingBlueTeam = !isEditingBlueTeam;
       isEditingRedTeam = false;
     });
-  }
-
-  // Format passes display
-  String getPassesDisplay(int passes) {
-    return passes == 9 ? "Unlimited" : passes.toString();
   }
 
   @override
@@ -281,7 +411,10 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                               ),
                               const SizedBox(height: 1),
                               GestureDetector(
-                                onTap: _showInstructionsDialog,
+                                onTap: () {
+                                  Vibration.vibrate(duration: 50);
+                                  _showInstructionsDialog();
+                                },
                                 child: Text(
                                   "How to create & enter custom data",
                                   style: GoogleFonts.nunito(
@@ -296,7 +429,7 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                                 alignment: Alignment.topRight,
                                 children: [
                                   Container(
-                                    height: 150,
+                                    height: 120,
                                     decoration: BoxDecoration(
                                       color: const Color(0xFF4B4093),
                                       borderRadius: BorderRadius.circular(10),
@@ -325,13 +458,17 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                                         ? IconButton(
                                             icon: Icon(Icons.paste,
                                                 color: Colors.white70),
-                                            onPressed: pasteFromClipboard,
+                                            onPressed: () {
+                                              Vibration.vibrate(duration: 20);
+                                              pasteFromClipboard();
+                                            },
                                           )
                                         : IconButton(
                                             icon: Icon(Icons.clear,
                                                 color: Colors.white70),
                                             onPressed: () {
                                               setState(() {
+                                                Vibration.vibrate(duration: 20);
                                                 customDataController.clear();
                                                 customDataErrorText = null;
                                               });
@@ -357,46 +494,80 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      // Game Settings Container
-                      GameSettingsWidget(
+
+                      // Compact Game Settings
+                      CompactGameSettings(
                         playTime: playTime,
-                        round: rounds,
-                        numberOfPasses: numberOfPasses,
-                        getPassesDisplay: getPassesDisplay,
-                        onPlayTimeChanged: (value) {
-                          Vibration.vibrate(duration: 10);
-                          setState(() {
-                            playTime = value.round();
-                          });
-                        },
-                        onRoundChanged: (value) {
-                          Vibration.vibrate(duration: 10);
-                          setState(() {
-                            rounds = value.round();
-                          });
-                        },
-                        onPassesChanged: (value) {
-                          Vibration.vibrate(duration: 10);
-                          setState(() {
-                            numberOfPasses = value.round();
-                          });
+                        rounds: rounds,
+                        passes: numberOfPasses,
+                        onEditPressed: () {
+                          Vibration.vibrate(duration: 20);
+                          _showGameSettingsDialog();
                         },
                       ),
-
                       const SizedBox(height: 40),
                     ],
                   ),
                 ),
+                // Update the READY button:
+
                 Positioned(
                   left: 20,
                   right: 20,
                   bottom: 20,
                   child: GestureDetector(
+
                     onTap: () {
                       Vibration.vibrate(duration: 100);
                       FocusScope.of(context).unfocus();
 
                       validateCustomJson();
+                      if (customDataErrorText == null &&
+                          customDataController.text.isNotEmpty) {
+                        try {
+                          debugPrint(
+                              "Custom Craze: Attempting to initialize custom taboo service...");
+
+                          CustomTabooService.clearCustomCards();
+                          TabooService.reset();
+
+                          CustomTabooService.initializeCustomCards(
+                              customDataController.text);
+
+                          if (CustomTabooService.hasCustomCards) {
+                            debugPrint(
+                                "Custom Craze: Successfully initialized with ${CustomTabooService.customCardCount} cards");
+
+                            final gameController = Get.put(GameController());
+                            gameController.initializeGame(redTeamName,
+                                blueTeamName, playTime, rounds, numberOfPasses);
+
+                            gameController.setUseCustomData(true);
+
+                            debugPrint(
+                                "Custom Craze: Game controller initialized with useCustomData=true");
+                                
+                            Get.to(() => const GetReadyScreen());
+                          } else {
+                            debugPrint(
+                                "Custom Craze: No custom cards loaded even though initialization didn't throw an error");
+                            setState(() {
+                              customDataErrorText =
+                                  "Failed to load any valid cards from the data";
+                            });
+                          }
+                        } catch (e) {
+                          debugPrint(
+                              "Custom Craze: Error in initialization: $e");
+                          setState(() {
+                            customDataErrorText =
+                                "Error processing custom data: ${e.toString().split('\n')[0]}";
+                          });
+                        }
+                      } else {
+                        debugPrint(
+                            "Custom Craze: Validation failed or empty data: $customDataErrorText");
+                      }
                     },
                     child: Container(
                       height: 60,
@@ -408,7 +579,7 @@ class _CustomCrazeHomeState extends State<CustomCrazeHome> {
                             color: Colors.black.withOpacity(0.1),
                             blurRadius: 10,
                             spreadRadius: 2,
-                            offset: Offset(0, 4),
+                            offset: const Offset(0, 4),
                           ),
                         ],
                       ),

@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class GameController extends GetxController {
+  // Flag to determine whether to use custom data
+  final useCustomData = false.obs;
+
   // Game settings
   final redTeamName = "Red Team".obs;
   final blueTeamName = "Blue Team".obs;
@@ -31,6 +34,8 @@ class GameController extends GetxController {
   // Game cards
   final usedCardIndices = <int>[].obs;
 
+// Update the initializeGame method:
+
   void initializeGame(
       String red, String blue, int time, int roundCount, int passes) {
     // Set game settings
@@ -44,6 +49,9 @@ class GameController extends GetxController {
     // Reset tracking
     redPlayedInRound.clear();
     bluePlayedInRound.clear();
+
+    // Reset custom data flag - this is the important addition
+    useCustomData.value = false;
 
     // Randomly determine starting team
     if (Random().nextBool()) {
@@ -62,6 +70,12 @@ class GameController extends GetxController {
     gameHistory.clear();
     roundHistory.clear();
     usedCardIndices.clear();
+  }
+
+  // Add a method to explicitly set the data mode:
+  void setUseCustomData(bool value) {
+    useCustomData.value = value;
+    debugPrint("GameController: useCustomData set to $value");
   }
 
   void switchTeam() {

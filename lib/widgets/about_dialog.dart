@@ -1,13 +1,34 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vibration/vibration.dart';
-import 'package:get/get.dart';
 
 class AboutDialogBox extends StatelessWidget {
   const AboutDialogBox({super.key});
+
+  String getRandomQuote() {
+    final List<String> quotes = [
+      "\"Say my name - just not the Taboo one.\"",
+      "\"Wands at the ready - this game is about to get magical.\"",
+      "\"Words are all we have, except the ones you can't say.\"",
+      "\"The best words are the ones that don't get you eliminated.\"",
+      "\"It’s like charades had a messy breakup with vocabulary class.\"",
+      "\"You had one job: say everything *except* the word. And you *still* said it.\"",
+      "\"In this game, ‘banana’ could mean ‘airplane’. Welcome to chaos.\"",
+      "\"Taboo: Where friendships go to be aggressively tested.\"",
+      "\"Me: I’m great with words. Also me: *accidentally says the Taboo word in 3 seconds.*\"",
+      "\"More panic, less clue. That’s the Taboo way.\"",
+      "\"Giving clues in Taboo is 90% flailing and 10% betrayal.\"",
+      "\"This is the most intense cardio I’ve done sitting down.\"",
+      "\"I speak fluent nonsense, especially under pressure.\"",
+      "\"If looks could kill, my team would've eliminated me three rounds ago.\"",
+    ];
+
+    return quotes[Random().nextInt(quotes.length)];
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +70,7 @@ class AboutDialogBox extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              "\"Say my name - just not the Taboo one.\"",
+              getRandomQuote(),
               textAlign: TextAlign.center,
               style: GoogleFonts.poppins(
                 color: const Color(0xFF452DA5),

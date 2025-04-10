@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vibration/vibration.dart';
 
@@ -190,7 +191,7 @@ class CustomInstructionsDialog extends StatelessWidget {
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.of(context).pop();
+                            Get.back();
                             Vibration.vibrate(duration: 50);
                           },
                           style: ElevatedButton.styleFrom(

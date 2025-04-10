@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:taboo/screens/home_screen.dart';
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await TabooService.loadDefaultCards();
   runApp(const MyApp());
 }
 

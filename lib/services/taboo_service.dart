@@ -4,16 +4,24 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:taboo/controllers/game_controller.dart';
 import 'package:taboo/models/taboo_card.dart';
+import 'package:taboo/services/custom_taboo_service.dart';
 
 class TabooService {
-  static List<TabooCard>? _cards;
+  static List<TabooCard>? _defaultCards;
   static bool _hasLoggedAssetInfo = false;
 
-  // Load cards from JSON file
-  static Future<List<TabooCard>> loadTabooCards() async {
-    if (_cards != null) {
-      return _cards!;
+  static void reset() {
+    _defaultCards = null;
+    _hasLoggedAssetInfo = false;
+    debugPrint("TabooService reset - will reload default cards");
+  }
+
+  // Load default cards from JSON file
+  static Future<void> loadDefaultCards() async {
+    if (_defaultCards != null) {
+      return;
     }
 
     // Log asset bundle info once to help debug
@@ -42,10 +50,9 @@ class TabooService {
           'First 100 chars: ${jsonString.substring(0, min(100, jsonString.length))}');
 
       final List<dynamic> jsonList = json.decode(jsonString);
-      _cards = jsonList.map((json) => TabooCard.fromJson(json)).toList();
+      _defaultCards = jsonList.map((json) => TabooCard.fromJson(json)).toList();
       print(
-          'Successfully loaded ${_cards!.length} cards from JSON using rootBundle');
-      return _cards!;
+          'Successfully loaded ${_defaultCards!.length} cards from JSON using rootBundle');
     } catch (e) {
       print('Error loading from rootBundle: $e');
 
@@ -55,10 +62,10 @@ class TabooService {
         final jsonString =
             await rootBundle.loadString('data/default_words.json');
         final List<dynamic> jsonList = json.decode(jsonString);
-        _cards = jsonList.map((json) => TabooCard.fromJson(json)).toList();
+        _defaultCards =
+            jsonList.map((json) => TabooCard.fromJson(json)).toList();
         print(
-            'Successfully loaded ${_cards!.length} cards without lib/ prefix');
-        return _cards!;
+            'Successfully loaded ${_defaultCards!.length} cards without lib/ prefix');
       } catch (e2) {
         print('Error loading without lib/ prefix: $e2');
 
@@ -68,10 +75,10 @@ class TabooService {
           final jsonString = await DefaultAssetBundle.of(Get.context!)
               .loadString('lib/data/default_words.json');
           final List<dynamic> jsonList = json.decode(jsonString);
-          _cards = jsonList.map((json) => TabooCard.fromJson(json)).toList();
+          _defaultCards =
+              jsonList.map((json) => TabooCard.fromJson(json)).toList();
           print(
-              'Successfully loaded ${_cards!.length} cards using DefaultAssetBundle');
-          return _cards!;
+              'Successfully loaded ${_defaultCards!.length} cards using DefaultAssetBundle');
         } catch (e3) {
           print('Error using DefaultAssetBundle: $e3');
 
@@ -83,10 +90,10 @@ class TabooService {
             final File file = File(path);
             final String jsonString = await file.readAsString();
             final List<dynamic> jsonList = json.decode(jsonString);
-            _cards = jsonList.map((json) => TabooCard.fromJson(json)).toList();
+            _defaultCards =
+                jsonList.map((json) => TabooCard.fromJson(json)).toList();
             print(
-                'Successfully loaded ${_cards!.length} cards from file system');
-            return _cards!;
+                'Successfully loaded ${_defaultCards!.length} cards from file system');
           } catch (e4) {
             print('Error reading directly from file: $e4');
 
@@ -123,16 +130,15 @@ class TabooService {
 
             try {
               final List<dynamic> jsonList = json.decode(rawJson);
-              _cards =
+              _defaultCards =
                   jsonList.map((json) => TabooCard.fromJson(json)).toList();
               print(
-                  'Using hardcoded JSON as fallback - loaded ${_cards!.length} cards');
-              return _cards!;
+                  'Using hardcoded JSON as fallback - loaded ${_defaultCards!.length} cards');
             } catch (e5) {
               print('Error with hardcoded JSON: $e5');
 
               // Last resort - fully manual cards
-              _cards = [
+              _defaultCards = [
                 TabooCard(
                   word: "Oops!",
                   forbiddenWords: [
@@ -155,8 +161,7 @@ class TabooService {
                 ),
               ];
               print(
-                  'Using manual cards as last resort - loaded ${_cards!.length} cards');
-              return _cards!;
+                  'Using manual cards as last resort - loaded ${_defaultCards!.length} cards');
             }
           }
         }
@@ -165,21 +170,51 @@ class TabooService {
   }
 
   static Future<TabooCard> getRandomCard(List<int> usedIndices) async {
-    final cards = await loadTabooCards();
-    final random = Random();
-    int index;
-
-    // Make sure we don't repeat cards unless we've used them all
-    if (usedIndices.length >= cards.length) {
-      // If all cards have been used, reset used indices
-      usedIndices.clear();
+    // Check if we should use custom data
+    try {
+      final GameController gameController = Get.find();
+      if (gameController.useCustomData.value) {
+        // Use custom taboo service
+        return CustomTabooService.getRandomCard(usedIndices);
+      }
+    } catch (e) {
+      print("GameController not found, falling back to default cards: $e");
     }
 
-    do {
-      index = random.nextInt(cards.length);
-    } while (usedIndices.contains(index));
+    // If we're not using custom data or if there was an error finding the controller,
+    // use default cards
+    if (_defaultCards == null || _defaultCards!.isEmpty) {
+      await loadDefaultCards();
+    }
 
-    usedIndices.add(index);
-    return cards[index];
+    // Check if default cards are available
+    if (_defaultCards == null || _defaultCards!.isEmpty) {
+      throw Exception("No default cards available");
+    }
+
+    // Create a list of available indices (not yet used)
+    List<int> availableIndices = [];
+    for (int i = 0; i < _defaultCards!.length; i++) {
+      if (!usedIndices.contains(i)) {
+        availableIndices.add(i);
+      }
+    }
+
+    // If all cards have been used, reset and use all again
+    if (availableIndices.isEmpty) {
+      availableIndices = List.generate(_defaultCards!.length, (index) => index);
+    }
+
+    // Pick a random index from available ones
+    final random = Random();
+    final randomIndex =
+        availableIndices[random.nextInt(availableIndices.length)];
+
+    // Add to used indices
+    if (!usedIndices.contains(randomIndex)) {
+      usedIndices.add(randomIndex);
+    }
+
+    return _defaultCards![randomIndex];
   }
 }
